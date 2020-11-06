@@ -997,3 +997,90 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 9427)
 
 
+Started GET "/" for ::1 at 2020-11-06 18:11:49 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 19491)
+
+
+Started GET "/welcome" for ::1 at 2020-11-06 18:11:56 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7921)
+
+
+Started GET "/users/new" for ::1 at 2020-11-06 18:11:58 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 28.2ms | ActiveRecord: 0.7ms | Allocations: 19152)
+
+
+Started POST "/users" for ::1 at 2020-11-06 18:12:41 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Cmak6G3IXogkpI03VhRt/cnJ6aQ8wkqGa2oOu6/s35NGfTybM9h+iF2xpKpMMJbajKPdobI7R8secxR+tEqC7Q==", "user"=>{"name"=>"jacob", "username"=>"jacobisthebest", "email_address"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :email_address[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 973)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2020-11-06 18:17:03 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Cmak6G3IXogkpI03VhRt/cnJ6aQ8wkqGa2oOu6/s35NGfTybM9h+iF2xpKpMMJbajKPdobI7R8secxR+tEqC7Q==", "user"=>{"name"=>"jacob", "username"=>"jacobisthebest", "email_address"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameters: :email_address, :password[0m
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms | Allocations: 9501)
+
+
+Started GET "/welcome" for ::1 at 2020-11-06 18:17:03 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 8334)
+
+
+Started GET "/users/new" for ::1 at 2020-11-06 18:17:04 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1604)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9369)
+
+
+Started POST "/users" for ::1 at 2020-11-06 18:17:15 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"T0ncGPSbSkNvlnKl0AzMS/fnFdkNoPCf3dPw9r4HMHIDUkRrqotqQxaDWzjKKDdsso0h3INZ/dKoyuozpaFtDA==", "user"=>{"name"=>"jacob", "username"=>"jacobisthebest", "email_address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameters: :email_address, :password, :password_confirmation[0m
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1397)
+
+
+Started GET "/welcome" for ::1 at 2020-11-06 18:17:15 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7257)
+
+
+Started GET "/login" for ::1 at 2020-11-06 18:17:35 -0500
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2388)
+
+
+  
+NameError (uninitialized constant SessionsController::Session):
+  
+app/controllers/sessions_controller.rb:3:in `new'

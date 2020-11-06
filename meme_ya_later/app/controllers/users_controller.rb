@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  
+  
   def index
   end
 
@@ -10,8 +12,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(params.require(:user).permit(:name, :username,        
-      :email, :password))
+    @user = User.find_by(name: params[:user][:name])
+    if @user && @user.authenticate(params[:user][:password])
+       session[:user_id] = @user.id
+       redirect_to user_path(@user)
+    else
+      redirect_to new_session_path
+    create(params.require(:user).permit(:name, :username,        
+      :email, :password_digest))
       session[:user_id] = @user.id
       redirect_to '/welcome'
    end
