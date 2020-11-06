@@ -1,8 +1,14 @@
 <h1> Upload a New Meme</h1>
 <%= form_for @meme do |f| %>
+    <% if @meme.errors.any? %>
+        <% @meme.errors.full_messages.each do |error| %>
+            <%= error %>
+        <% end %>
+    <% end %>
     <%= f.label :url%>
     <%= f.text_field :url %>
     <%= f.label :category %>
     <%= f.collection_select(:category, Category.all, :id, :name) %>
     <%= f.submit "Post Meme" %>
+    <% @meme.user = @current_user %>
 <%end%>

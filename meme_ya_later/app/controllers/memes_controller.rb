@@ -13,6 +13,7 @@ class MemesController < ApplicationController
 
   def create
     @meme = Meme.new(meme_params)
+    @current_user = session[:user]
     if @meme.save
       redirect_to meme_path(@meme)
     else
@@ -23,6 +24,6 @@ class MemesController < ApplicationController
   private
 
   def meme_params
-    params.require(:meme).permit(:url, user_id: session[:user], :category_id)
+    params.require(:meme).permit(:url, :user, :category_id)
   end
 end

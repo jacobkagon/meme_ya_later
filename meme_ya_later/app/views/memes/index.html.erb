@@ -1,2 +1,4 @@
-<h1>Memes#index</h1>
-<p>Find me in app/views/memes/index.html.erb</p>
+<h1> Memes </h1>
+<% @memes.each do |meme| %>
+    <%= image_tag meme.url%>
+<%end%>
