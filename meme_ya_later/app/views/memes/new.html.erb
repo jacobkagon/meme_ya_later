@@ -1,2 +1,8 @@
-<h1>Memes#new</h1>
-<p>Find me in app/views/memes/new.html.erb</p>
+<h1> Upload a New Meme</h1>
+<%= form_for @meme do |f| %>
+    <%= f.label :url%>
+    <%= f.text_field :url %>
+    <%= f.label :category %>
+    <%= f.collection_select(:category, Category.all, :id, :name) %>
+    <%= f.submit "Post Meme" %>
+<%end%>
