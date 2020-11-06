@@ -307,3 +307,118 @@ SyntaxError (/Users/justinclifford/Flatiron/code/meme_ya_later/meme_ya_later/app
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
+Started GET "/" for ::1 at 2020-11-06 14:24:49 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 369)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 8377)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-sprockets.
+        on line 1:1 of app/assets/stylesheets/application.scss
+>> @import "bootstrap-sprockets";
+
+   ^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:1
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-11-06 14:26:17 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 15541)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 2:1 of app/assets/stylesheets/application.scss
+>> @import "font-awesome";
+
+   ^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:8
+Started GET "/" for ::1 at 2020-11-06 14:26:27 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-11-06 14:26:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/public/packs
+[Webpacker] Hash: b7f1fc774f6501e951eb
+Version: webpack 4.44.2
+Time: 1472ms
+Built at: 11/06/2020 2:26:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8268bc3b44e3e019ae2b.js    124 KiB  application  [emitted] [immutable]  application
+js/application-8268bc3b44e3e019ae2b.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8268bc3b44e3e019ae2b.js js/application-8268bc3b44e3e019ae2b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 820 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 6220ms (Views: 6219.5ms | ActiveRecord: 0.0ms | Allocations: 126645)
+
+
+[Webpacker] Compiled all packs in /Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/public/packs
+[Webpacker] Hash: b7f1fc774f6501e951eb
+Version: webpack 4.44.2
+Time: 570ms
+Built at: 11/06/2020 2:26:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8268bc3b44e3e019ae2b.js    124 KiB  application  [emitted] [immutable]  application
+js/application-8268bc3b44e3e019ae2b.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8268bc3b44e3e019ae2b.js js/application-8268bc3b44e3e019ae2b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 820 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1668ms (Views: 1667.6ms | ActiveRecord: 0.0ms | Allocations: 9766)
+
+
+Started GET "/" for ::1 at 2020-11-06 14:27:36 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 7471)
+
+
+Started GET "/" for ::1 at 2020-11-06 14:27:47 -0500
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 7449)
+
+
