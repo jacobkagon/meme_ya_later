@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_11_06_002446) do
   end
 
   create_table "memes", force: :cascade do |t|
-    t.string "url"
+    t.text "url"
     t.integer "user_id"
     t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
