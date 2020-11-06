@@ -307,3 +307,354 @@ SyntaxError (/Users/justinclifford/Flatiron/code/meme_ya_later/meme_ya_later/app
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
 app/controllers/memes_controller.rb:26: syntax error, unexpected ')', expecting =>
+Started GET "/memes/new" for ::1 at 2020-11-06 14:16:11 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/justinclifford/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+...: session[:user], :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+Started GET "/memes/new" for ::1 at 2020-11-06 14:16:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/justinclifford/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+...r: @current_user, :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:27: syntax error, unexpected ')', expecting =>
+Started GET "/memes/new" for ::1 at 2020-11-06 14:17:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 50.7ms | Allocations: 15451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 80.5ms | ActiveRecord: 1.3ms | Allocations: 29455)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:18:24 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"p9rE4BoxncfegehNkxSVSG8CKAkWJrDHlTP2zKuSmWjXlYWmTOYiFuQ/KWGZmVX1d0NqjP8lMCy8u8k1mDTFqQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1304)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.1ms | Allocations: 6357)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:18:29 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"V0jsogwgvcBP7S33XerMdmucPaKkxEjZpGEpaZGCqlAnB63kWvcCEXVT7NtXZwzLc91/J03HyDKN6RaQoiT2kQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 6161)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:18:29 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"WqUCpJFLqFpISdifcTFjIloVxj+CQW1E8QOlgZbeaLwq6kPix5wXi3L3GbN7vKOfQlSEumtC7a/Yi5p4pXg0fQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1286)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 6137)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:18:30 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"0fgC9B3s94ZWLZE6LaQXjNfXXcGFLRLFX87RydxcO4mht0OySztIV2yTUBYnKdcxz5YfRGwuki52Ru4w7/pnSA==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 6148)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:18:31 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"q6vytcqMbSIWKxg4eXLwBn3zMHxdaAW7XclG/IERveHb5LPznFvS8yyV2RRz/zC7ZbJy+bRrhVB0QXkFsrfhIA==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6152)
+
+
+Started GET "/memes" for ::1 at 2020-11-06 14:18:36 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered memes/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4283)
+
+
+Started GET "/memes" for ::1 at 2020-11-06 14:19:45 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered memes/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1361)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2526)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h1> Memes </h1>
+    2: <%= img src= @meme.url %>
+  
+app/views/memes/index.html.erb:2
+Started GET "/memes" for ::1 at 2020-11-06 14:20:44 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered memes/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1354)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h1> Memes </h1>
+    2: <%= img src=@meme.url %>
+  
+app/views/memes/index.html.erb:2
+Started GET "/memes" for ::1 at 2020-11-06 14:22:17 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.5ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:2
+  Rendered memes/index.html.erb within layouts/application (Duration: 122.6ms | Allocations: 76001)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.5ms | Allocations: 77182)
+
+
+  
+ActionView::Template::Error (undefined method `img' for #<#<Class:0x00007fad5294d1d8>:0x00007fad5322e2c0>):
+    1: <h1> Memes </h1>
+    2: <% @memes.each do |meme| %>
+    3:     <%= img src=meme.url%>
+    4: <%end%>
+  
+app/views/memes/index.html.erb:3
+app/views/memes/index.html.erb:2
+Started GET "/memes" for ::1 at 2020-11-06 14:22:40 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:2
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 743)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms | Allocations: 5701)
+
+
+Started GET "/memes" for ::1 at 2020-11-06 14:23:11 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:2
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 762)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 5717)
+
+
+Started GET "/memes" for ::1 at 2020-11-06 14:23:31 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:2
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 624)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 4644)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-06 14:23:39 -0500
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 5684)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:29:06 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"J0wFlOSoQD6BFmHXKFx4RpNuk6fQF5EjReb70MoA9YxXA0TSsn//77uooPsi0bj7iy/RIjkUEchsbsQp+aapTQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:6
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1286)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.1ms | Allocations: 6134)
+
+
+Started GET "/memes" for ::1 at 2020-11-06 14:29:12 -0500
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:2
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 624)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 4654)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-06 14:31:33 -0500
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1191)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2355)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> Upload a New Meme</h1>
+<%= form_for @meme do |f| %>
+    <%= if @meme.errors.any? %>
+        <% @meme.errors.full_messages.each do %>
+            <%= error %>
+        <% end %>
+    <% end %>
+    <%= f.label :url%>
+    <%= f.text_field :url %>
+    <%= f.label :category %>
+    <%= f.collection_select(:category, Category.all, :id, :name) %>
+    <%= f.submit "Post Meme" %>
+    <%@meme.user = @current_user%>
+<%end%>
+
+):
+1:    <h1> Upload a New Meme</h1>
+2:    <%= form_for @meme do |f| %>
+3:        <%= if @meme.errors.any? %>
+4:            <% @meme.errors.full_messages.each do %>
+5:                <%= error %>
+6:            <% end %>
+7:        <% end %>
+8:        <%= f.label :url%>
+9:        <%= f.text_field :url %>
+10:        <%= f.label :category %>
+11:        <%= f.collection_select(:category, Category.all, :id, :name) %>
+12:        <%= f.submit "Post Meme" %>
+13:        <%@meme.user = @current_user%>
+14:    <%end%>
+  
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:3: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/memes/new.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:14: syntax error, unexpected end, expecting ')'
+app/views/memes/new.html.erb:16: syntax error, unexpected end, expecting ')'
+Started GET "/memes/new" for ::1 at 2020-11-06 14:32:52 -0500
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 6547)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:32:57 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"yDimy3yelLRm5BHDcd1QPmv1tR/5+nQIoKi5wXnENJ+4d+eNKkkrZVxa0O97UJCDc7T3mhD59OOJIIY4SmJoXg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 265.5ms | Allocations: 147720)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.0ms | Allocations: 149132)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `error' for #<#<Class:0x00007fad5682f978>:0x00007fad50387e08>):
+    2: <%= form_for @meme do |f| %>
+    3:     <% if @meme.errors.any? %>
+    4:         <% @meme.errors.full_messages.each do %>
+    5:             <%= error %>
+    6:         <% end %>
+    7:     <% end %>
+    8:     <%= f.label :url%>
+  
+app/views/memes/new.html.erb:5
+app/views/memes/new.html.erb:4:in `each'
+app/views/memes/new.html.erb:4
+app/views/memes/new.html.erb:2
+app/controllers/memes_controller.rb:20:in `create'
+Started POST "/memes" for ::1 at 2020-11-06 14:33:22 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"yDimy3yelLRm5BHDcd1QPmv1tR/5+nQIoKi5wXnENJ+4d+eNKkkrZVxa0O97UJCDc7T3mhD59OOJIIY4SmJoXg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 7500)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:33:24 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"qFJbMzwLksec4lrDa0Fl3Fc/kUqsTkNLUyjAC61d6tfYHRp1atwtFqZcm+9hzKVhT37Tz0VNw6B6oP/ynvu2Fg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1428)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 6274)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:33:26 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"SsHbAI1lIm0qCbp1rNenGQzix5L6xlx/ntG2q6h5nJI6jppG27KdvBC3e1mmWmekFKOFFxPF3JS3WYlSm9/AUw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1421)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.1ms | Allocations: 6267)
+
+
+Started POST "/memes" for ::1 at 2020-11-06 14:33:27 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"JGYFoTPkEv0hj3y4USmHsf39UxoRnPEl9I0q9leg8GpUKUTnZTOtLBsxvZRbpEcM5bwRn/ifcc7dBRUPZAasqw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1421)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 6269)
+
+
