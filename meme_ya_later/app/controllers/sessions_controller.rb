@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
        session[:user_id] = @user.id
        redirect_to user_path(@user)
       else
+        "Invalid Login. Please try again or create an account."
       redirect_to login_path
       end
     end
