@@ -17,11 +17,16 @@ class SessionsController < ApplicationController
     end
 
     def login
+      redirect_to memes_path
 
     end
 
     def welcome
 
+    end
+
+    def page_requires_login
+      
     end
     
   

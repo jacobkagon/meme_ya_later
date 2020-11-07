@@ -18,5 +18,6 @@ class UsersController < ApplicationController
       :email, :password_digest))
       session[:user_id] = @user.id
       redirect_to '/welcome'
+      
    end
 end
