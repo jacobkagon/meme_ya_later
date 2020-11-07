@@ -4,7 +4,9 @@
 <%end%>
 
 <% @memes.each do |meme| %>
-    <%= image_tag meme.url%>
+    <%= link_to meme_path(meme) do %>
+        <%= image_tag meme.url %>
+    <% end %>
 <%end%><br>
 
 
