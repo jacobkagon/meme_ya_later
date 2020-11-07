@@ -2,17 +2,17 @@ class SessionsController < ApplicationController
   skip_before_action :authorized, only: [:new, :create, :welcome]
   
   def new
-        
-    end
+    render :new
+  end
 
     def create
        @user = User.find_by(name: params[:name])
       if @user && @user.authenticate(params[:user][:password_digest])
        session[:user_id] = @user.id
-       redirect_to user_path(@user)
+       redirect_to memes_path
       else
         "Invalid Login. Please try again or create an account."
-      redirect_to login_path
+        redirect_to login_path
       end
     end
 
@@ -25,6 +25,4 @@ class SessionsController < ApplicationController
     end
     
   
-
-
 end

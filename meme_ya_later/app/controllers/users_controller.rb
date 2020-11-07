@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   skip_before_action :authorized, only: [:new, :create]
   
   def index
-    @users = Users.all 
+    @users = User.all 
   end
 
   def show
@@ -15,8 +15,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(params.require(:user).permit(:name, :username,        
-      :email, :password_digest))
-      session[:user_id] = @user.id
-      redirect_to '/welcome'
-   end
+    :email, :password_digest))
+    session[:user_id] = @user.id
+    redirect_to memes_path
+  end
 end

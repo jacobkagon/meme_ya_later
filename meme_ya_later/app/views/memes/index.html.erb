@@ -1,4 +1,10 @@
 <h1> Memes </h1>
+<% if logged_in? %>
+    <h1>You are Logged In, <%= current_user.username %></h1>
+<%end%>
+
 <% @memes.each do |meme| %>
     <%= image_tag meme.url%>
-<%end%>
+<%end%><br>
+
+
