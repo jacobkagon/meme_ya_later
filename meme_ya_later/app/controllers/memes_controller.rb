@@ -13,7 +13,7 @@ class MemesController < ApplicationController
 
   def create
     @meme = Meme.new(meme_params)
-    @current_user = session[:user]
+    
     if @meme.save
       redirect_to meme_path(@meme)
     else

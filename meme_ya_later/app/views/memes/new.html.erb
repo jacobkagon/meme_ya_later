@@ -9,6 +9,11 @@
     <%= f.text_field :url %>
     <%= f.label :category %>
     <%= f.collection_select(:category, Category.all, :id, :name) %>
+    <% if current_user %>
+        User ID: <%= current_user.id %>
+        User Name: <%= current_user.username %>
+        <% f.hidden_field :user_id, value: current_user.id %>
+    <% end %>
     <%= f.submit "Post Meme" %>
     <% @meme.user = @current_user %>
 <%end%>
