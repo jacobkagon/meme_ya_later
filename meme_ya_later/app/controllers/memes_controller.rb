@@ -1,6 +1,7 @@
 class MemesController < ApplicationController
   def index
     @memes = Meme.all
+
   end
 
   def show
@@ -12,7 +13,7 @@ class MemesController < ApplicationController
   end
 
   def create
-    @meme = Meme.new(meme_params)
+    @meme = Meme.create(meme_params)
     
     if @meme.save
       redirect_to meme_path(@meme)
