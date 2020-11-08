@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     def create
        @user = User.find_by(name: params[:name])
-      if @user && @user.authenticate(params[:user][:password_digest])
+      if @user && @user.authenticate(params[:password_digest])
        session[:user_id] = @user.id
        redirect_to memes_path
       else
