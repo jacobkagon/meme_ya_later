@@ -2,10 +2,13 @@
 <% if logged_in? %>
     <h1>You are Logged In, <%= current_user.username %></h1>
 <%end%>
+<%= button_to 'Logout', logout_path %>
+
+<%= button_to 'Post Meme', new_meme_path, method: :get %>
 
 <% @memes.each do |meme| %>
-    <%= link_to meme_path(meme) do %>
-        <%= image_tag meme.url %>
+    <div><%= link_to meme_path(meme) do %>
+        <%= image_tag meme.url %></div>
     <% end %>
 <%end%><br>
 

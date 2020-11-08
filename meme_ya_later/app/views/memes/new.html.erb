@@ -2,18 +2,12 @@
 <%= form_for @meme do |f| %>
     <% if @meme.errors.any? %>
         <% @meme.errors.full_messages.each do |error| %>
-            <%= error %>
+            <%= error %><br>
         <% end %>
     <% end %>
-    <%= f.label :url%>
-    <%= f.text_field :url %>
-    <%= f.label :category %>
-    <%= f.collection_select(:category, Category.all, :id, :name) %>
-    <% if current_user %>
-        User ID: <%= current_user.id %>
-        User Name: <%= current_user.username %>
-        <% f.hidden_field :user_id, value: current_user.id %>
-    <% end %>
+    <%= f.label :url%><br>
+    <%= f.text_field :url %><br>
+    <%= f.label :category %><br>
+    <%= f.collection_select(:category, Category.all, :id, :name) %><br>
     <%= f.submit "Post Meme" %>
-    <% @meme.user = @current_user %>
 <%end%>
