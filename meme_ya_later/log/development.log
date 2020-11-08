@@ -2701,3 +2701,2505 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 7401)
 
 
+Started GET "/memes/new" for ::1 at 2020-11-07 23:21:45 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 80.4ms | Allocations: 18827)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 401ms (Views: 332.2ms | ActiveRecord: 3.1ms | Allocations: 57490)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:21:51 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3459)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 11099)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:21:52 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"wnqZPvJoPl0kOsB6o2r/ytP4q9IgJmDoR81bQEj5cuhGy/Ruq5Zn1tOHH+Xz8odT6CXrGoYRbVI1h90R0YVvoA==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3580)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 12950)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:22:38 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:8
+  Rendered memes/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5979)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 18.1ms | ActiveRecord: 1.5ms | Allocations: 22423)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:22:40 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 7873)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.9ms | Allocations: 15391)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:22:41 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"6KfzBvi9bGyexXa7xFcSCJVIYK7Hia54NSFCiVKDL+tsFp5WoUM152l4qSSUz2qRrpUgZmG+o8JHa8TYy/8yow==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 5614)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.3ms | Allocations: 20701)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:23:34 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:8
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.3ms | Allocations: 10560)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:23:35 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3821)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 11572)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:23:59 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"wKgdyfjC+UDp8/b1jznoDM3bBIl8EJ2BdPNy+8SbMGVEGXCZoTygyx5OKWrfoZCV9gZEQdonkDsGufSqXectLQ==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.6ms | Allocations: 13473)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:24:27 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:8
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms | Allocations: 10564)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:24:28 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.3ms | Allocations: 11573)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:24:29 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"bXcprV/fCdJ6ApIF74vtfoP8U+QTwnfKri2P8DlVXkbpxkT9BiFQWY2/TZq/E5XnuCETLLX1enDcZwmhoClDDg==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.3ms | Allocations: 13443)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:24:32 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:8
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 9377)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:24:33 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 3451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms | Allocations: 11088)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:24:38 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"PVCRZu3nXBjD3TVTRAmBtUBY3wDH+IxIEuNEi8COqSS54fw2tBkFkzRg6swUkfkse4WfyGHPgfJgqcLaWfK0bA==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 13445)
+
+
+Started GET "/memesrger" for ::1 at 2020-11-07 23:39:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/memesrger"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-07 23:41:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 6085)
+[Webpacker] Compiling...
+Started GET "/memes" for ::1 at 2020-11-07 23:41:40 -0500
+[Webpacker] Compiled all packs in /Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/public/packs
+[Webpacker] Hash: 86559a347c08f606507b
+Version: webpack 4.44.2
+Time: 2031ms
+Built at: 11/07/2020 11:41:42 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-21216a37d4872c73b4c5.js    124 KiB  application  [emitted] [immutable]  application
+js/application-21216a37d4872c73b4c5.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-21216a37d4872c73b4c5.js js/application-21216a37d4872c73b4c5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 891 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5498ms (Views: 5480.7ms | ActiveRecord: 1.8ms | Allocations: 146453)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5832)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 27.1ms | ActiveRecord: 1.6ms | Allocations: 22128)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:41:44 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rTK5XTwG+j/89OogpmnMJbjPDas14p/h0n7WK5RIP/Mpg9QNZfijtAtJNb/28bS8gxJNY5PVklugNFB6DTQiuw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2342)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:33:in `destroy'
+Started POST "/logout" for ::1 at 2020-11-07 23:47:12 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rTK5XTwG+j/89OogpmnMJbjPDas14p/h0n7WK5RIP/Mpg9QNZfijtAtJNb/28bS8gxJNY5PVklugNFB6DTQiuw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 17ms (ActiveRecord: 0.3ms | Allocations: 9082)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:47:12 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 7918)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:47:18 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 5552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.3ms | Allocations: 14031)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:47:20 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iBD0UnWMF+uFiDDdJpXrY/DFjaojdu0Eo1bg27s4yGsMoZkCLHJOYHI170J2DZP6yxjNYoVB4L7RHGaKIkTVIw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1538)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:47:20 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 7183)
+
+
+Started GET "/login" for ::1 at 2020-11-07 23:47:21 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 503)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 7659)
+
+
+Started GET "/users/new" for ::1 at 2020-11-07 23:47:23 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 9606)
+
+
+Started POST "/users" for ::1 at 2020-11-07 23:49:00 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"B2lS771wq18jzlkoaFJKeMBsS57CwohNAzqjJukaOZuD2D+/5I7y1NRzhrc4yjLh+7ELVmT1hfdxcCV3cGYk0w==", "user"=>{"name"=>"Justin Clifford", "username"=>"jr mafia", "email_address"=>"Justin Clifford", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :email_address[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Justin Clifford"], ["username", "jr mafia"], ["created_at", "2020-11-08 04:49:00.827685"], ["updated_at", "2020-11-08 04:49:00.827685"], ["password_digest", "Sk8erj12!"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 11ms (ActiveRecord: 4.4ms | Allocations: 3087)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:49:00 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 9501)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:49:56 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"InkH9rKL1PMyVAHraLAt5cwPeFfHwJaz0lteV9XJysSmyGqm63WNeMXp3nQ4KFV899I4n2H3mwmgEdgGTLXXjA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1533)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:49:56 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7190)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:49:57 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 9483)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:49:59 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y9sD90PpmGF21sADWPWJnp80QaiWff1XJyYSgrBRRI5Pam6nGhfB6oFrH5wIbfEHpOkBYDBK8O1VbJTTKS1Zxg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1535)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:49:59 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 7188)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:01 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 7178)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:50:02 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 9487)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:50:04 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NdKOGTwHf27zCw94YmO9yevNe8cjU3CctKsgMFgdSJKxY+NJZfkm5QS20Ocy+8VQ0BA7D4VkfSbG4aZhwWFV2g=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:32:in `destroy'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1541)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:04 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7187)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 7362)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:50:32 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6230)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 20.2ms | ActiveRecord: 1.3ms | Allocations: 22538)
+
+
+Started POST "/logout" for ::1 at 2020-11-07 23:50:34 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EaDeUzAMMF873N4qUq9WRDbbaGBLGt0XKJzYva3Iv2mVEbMDafJp1MxhAbUCNy7dDQYoqO0t0K1a1l7sNLSiIQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 854)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:34 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 7179)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:50:35 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms | Allocations: 966)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:35 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7182)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:50:36 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/welcome" for ::1 at 2020-11-07 23:50:36 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 7179)
+
+
+Started GET "/login" for ::1 at 2020-11-07 23:53:29 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 7276)
+
+
+Started GET "/login?name=Justin+Clifford&password_digest=[FILTERED]&commit=Login" for ::1 at 2020-11-07 23:53:33 -0500
+Processing by SessionsController#new as HTML
+  Parameters: {"name"=>"Justin Clifford", "password_digest"=>"[FILTERED]", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 7273)
+
+
+Started GET "/login?name=Justin+Clifford&password_digest=[FILTERED]&commit=Login" for ::1 at 2020-11-07 23:53:34 -0500
+Processing by SessionsController#new as HTML
+  Parameters: {"name"=>"Justin Clifford", "password_digest"=>"[FILTERED]", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 7269)
+
+
+Started GET "/users/new" for ::1 at 2020-11-07 23:53:37 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 8590)
+
+
+Started POST "/users" for ::1 at 2020-11-07 23:53:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"clmBBaEVVZfyK8mrUH+7DHFhW4K5Fj6PTzsVyCsRD4n26OxV+OsMHAWWFjQA58OVSrwbSh8hMzU9cZOZsm0SwQ==", "user"=>{"name"=>"Justin Clifford", "username"=>"jrcliff2", "email_address"=>"justoon7.jc@gmail.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :email_address[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Justin Clifford"], ["username", "jrcliff2"], ["created_at", "2020-11-08 04:53:58.904660"], ["updated_at", "2020-11-08 04:53:58.904660"], ["password_digest", "Sk8erj12!"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms | Allocations: 3000)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:53:58 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 9487)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:54:02 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 19.8ms | Allocations: 8678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.7ms | Allocations: 16327)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:54:03 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"+lq6kW38zGd8ai1w6YCo9EiU5DCjimR8wVFlt4R2IP1+69fBNAKV7IvX8u+5GNBtc0mk+AW9acazG+PmHQo9tQ==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3700)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.3ms | Allocations: 13482)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:56:54 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"q99cJJZROFHIBbPftIToJ/wEedaxG3TiGEah2kOV9NMvbjF0z69h2j+4bEDkHJC+x9k5HhcseVhqDCeL2unpmw==", "meme"=>{"url"=>"", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+[31mUnpermitted parameter: :category[0m
+Completed 500 Internal Server Error in 74209ms (ActiveRecord: 1.0ms | Allocations: 193387)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:19:in `create'
+Started GET "/memes" for ::1 at 2020-11-07 23:58:09 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 751.6ms | Allocations: 7264539)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5312ms (Views: 4773.6ms | ActiveRecord: 3.0ms | Allocations: 49034647)
+
+
+Started GET "/memes" for ::1 at 2020-11-07 23:58:16 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 299.9ms | Allocations: 2077195)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1445ms (Views: 1128.2ms | ActiveRecord: 29.6ms | Allocations: 12316972)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-07 23:58:22 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 256.4ms | Allocations: 2777512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 818ms (Views: 778.3ms | ActiveRecord: 8.2ms | Allocations: 9154326)
+
+
+Started POST "/memes" for ::1 at 2020-11-07 23:58:27 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"6Swdjc/SIAMFB56Y9UAErNN5Yq5+eE9E3+Ymo6wy38dtnXDdlix5iPK6QQel2Hw16KQiZthPQv6trKDyNU7Cjw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 176.6ms | Allocations: 1903657)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 581ms (Views: 469.3ms | ActiveRecord: 11.5ms | Allocations: 6188361)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:00:44 -0500
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+...ession[:user_id], :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+Started POST "/memes" for ::1 at 2020-11-08 00:01:20 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+...sion([:user_id]), :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+Started POST "/memes" for ::1 at 2020-11-08 00:03:24 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+... current_user.id, :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+Started POST "/memes" for ::1 at 2020-11-08 00:03:52 -0500
+  
+SyntaxError (/Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+... current_user.id, :category_id)
+...                              ^):
+  
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+app/controllers/memes_controller.rb:29: syntax error, unexpected ')', expecting =>
+Started POST "/memes" for ::1 at 2020-11-08 00:04:08 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"UlnDBIcxtd4GiyH5R7AZWHrv53mqJE+UaP6KXRff3YrW6K5U3s/sVfE2/mYXKGHBQTKnsQwTQi4atAwMjqPAwg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 341.1ms | Allocations: 3156108)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1786ms (Views: 1168.2ms | ActiveRecord: 43.9ms | Allocations: 16880696)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:04:15 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"u8HuaEdeRiJn1mCI6ykvlTHCJFBEQjY9q18r99G2DNU/cIM4HqAfqZBrvxe7sVcMCh9kmOJ1O4fZFa2mSMoRnQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 223.6ms | Allocations: 1795807)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 893ms (Views: 760.5ms | ActiveRecord: 6.9ms | Allocations: 9170659)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 00:04:18 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.5ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 122.0ms | Allocations: 1282948)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 446ms (Views: 389.8ms | ActiveRecord: 3.1ms | Allocations: 4970881)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:04:20 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 117.3ms | Allocations: 1190924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 472ms (Views: 433.2ms | ActiveRecord: 7.2ms | Allocations: 3766438)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:04:23 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"bULOlBlITXGT8oHKjq/VbTDH149SS1Mq65Mu/BqvTUrp86PEQLYU+mRPXlXeN630CxqXR/R8XpCZ2aitg9NQAg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 120.0ms | Allocations: 1265302)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 872ms (Views: 759.4ms | ActiveRecord: 3.1ms | Allocations: 9079146)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 00:05:02 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (7.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 76.8ms | Allocations: 755243)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 363ms (Views: 307.5ms | ActiveRecord: 9.3ms | Allocations: 3522205)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:05:04 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 149.6ms | Allocations: 1257520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 563ms (Views: 513.1ms | ActiveRecord: 7.4ms | Allocations: 5414469)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:05:10 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"mLAuN4hu5M2Pve/XWdnSg9G7Iaw/7fvbDkV0OOKqgxocAUNn0ZC9RngAMEgJQaoa6mZhZJna9mF8D/Jpe9aeUg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 301.0ms | Allocations: 2945728)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1019ms (Views: 870.9ms | ActiveRecord: 3.0ms | Allocations: 9115707)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:05:47 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"PpzTmVAtfEwMHNXszHkkM9el0kJwMEbGpgJFkBPRfIa6Lb7JCdMlx/uhCnOc4Vyq7HiSitYHS3zUSMPBiq1hzg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+[31mUnpermitted parameter: :category[0m
+[31mUnpermitted parameter: :category[0m
+Completed 500 Internal Server Error in 72946ms (ActiveRecord: 29.9ms | Allocations: 4603851)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `process_action'
+Started GET "/memes" for ::1 at 2020-11-08 00:07:23 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (5.9ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 212.6ms | Allocations: 2162943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1251ms (Views: 895.7ms | ActiveRecord: 26.8ms | Allocations: 12765322)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:07:29 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 305.5ms | Allocations: 2991508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 791ms (Views: 709.6ms | ActiveRecord: 16.0ms | Allocations: 7814901)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:07:33 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"FCpRrbN0gXFubF0UzeYa3AOGgDMvqRoujA307wX/Zr6Qmzz96orY+pnRgoudfmJFOFvA+4meF5T+R3K+nIN79g==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 166.0ms | Allocations: 1514888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 949ms (Views: 796.1ms | ActiveRecord: 7.3ms | Allocations: 8729180)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:25:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-08 00:08:28 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 60.2ms | Allocations: 20156)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 148.4ms | ActiveRecord: 2.5ms | Allocations: 52539)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:08:31 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"+K1Nq1DABaC0mLg7lsWkx1BHvXp+v5Rup2TCxu+HzSN8HCD7CT5cK0MlZ6TGXdxea5r9stiImdTVLkSXdvvQaw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3063)
+[Webpacker] Everything's up-to-date. Nothing to do
+[31mUnpermitted parameter: :category[0m
+Completed 500 Internal Server Error in 185900ms (Views: 19.6ms | ActiveRecord: 0.3ms | Allocations: 341644)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:11:37 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 176.7ms | Allocations: 2067391)
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:25:in `create'
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3976ms (Views: 3919.9ms | ActiveRecord: 6.6ms | Allocations: 35659325)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:11:44 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 285.7ms | Allocations: 2725572)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1277ms (Views: 886.4ms | ActiveRecord: 37.7ms | Allocations: 13400438)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:11:53 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"msfymkaQXgWXAP+6olzz3Lu77oTn+bK6GRjJKqSvYSEedp/KH24HjmC9ICXyxItFgGauTEHOvwBrUk97PdN8aQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.2ms | Allocations: 574089)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Category(#70361519907820) expected, got "1" which is an instance of String(#70361492602360)):
+  
+app/controllers/memes_controller.rb:16:in `create'
+Started POST "/memes" for ::1 at 2020-11-08 00:12:43 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"msfymkaQXgWXAP+6olzz3Lu77oTn+bK6GRjJKqSvYSEedp/KH24HjmC9ICXyxItFgGauTEHOvwBrUk97PdN8aQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 280.1ms | Allocations: 2702327)
+Started GET "/memes/new" for ::1 at 2020-11-08 00:12:48 -0500
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 15680ms (Views: 1022.6ms | ActiveRecord: 47.8ms | Allocations: 16319407)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:25:in `create'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/memes/new" for ::1 at 2020-11-08 00:13:13 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 379.2ms | Allocations: 3450667)
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 494.5ms | Allocations: 4619737)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1566ms (Views: 1161.2ms | ActiveRecord: 26.8ms | Allocations: 15886626)
+
+
+Completed 200 OK in 1417ms (Views: 1153.5ms | ActiveRecord: 3.4ms | Allocations: 14237506)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:13:19 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"yZf0laAjzVpp7TEbn0+4pY5it7wUBfGoYe3wXU7r4sVNJpnF+d2U0Z5Q7oTP18A8tb/3dLIy/BITp3YM15f/jQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 174.1ms | Allocations: 1653405)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 31692ms (Views: 400.6ms | ActiveRecord: 7.0ms | Allocations: 5315428)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:25:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-08 00:13:58 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 300.9ms | Allocations: 3086436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1118ms (Views: 714.6ms | ActiveRecord: 30.7ms | Allocations: 11635698)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:14:12 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"XSuN+118tP6xOQqCFo7mAlIPrqtfLxKhiAkEOfgEQ1rZmuCrBILtdUaE1R1GFp6badLuY/kYHxv6Q4JoYXheEg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 178.2ms | Allocations: 1723357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 344723ms (Views: 503.2ms | ActiveRecord: 3.2ms | Allocations: 5909870)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:25:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-08 00:20:01 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 420.6ms | Allocations: 3257141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1326ms (Views: 844.6ms | ActiveRecord: 40.2ms | Allocations: 12125956)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:20:11 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"YSn7WWniumq+A7BqJAt/iU3ZTpupykEyoNAf1y96mTPlmJYJMBzj4Um+b/V0kwcQdgQOUw/9TIjSmpmGtgaEew==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 124.4ms | Allocations: 1192861)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 858ms (Views: 775.0ms | ActiveRecord: 2.9ms | Allocations: 8263105)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 00:22:23 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 83.4ms | Allocations: 762676)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 640ms (Views: 586.2ms | ActiveRecord: 3.1ms | Allocations: 5432024)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:22:25 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 258.5ms | Allocations: 2233881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 940ms (Views: 857.8ms | ActiveRecord: 3.3ms | Allocations: 8052645)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:22:28 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"4CfkiDzzrXQ59uceKFd4LWQLAX9p245nRT5NFpdh9EFklonYZQ30/85LOIF4zwC0X9ZBt8/sg903dMtHDh3pCQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 261.0ms | Allocations: 2166755)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 598ms (Views: 475.8ms | ActiveRecord: 7.7ms | Allocations: 5576961)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:23:34 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"gkx1rviY8L3BLTPgYoUNa785p/RwM2KhHVwc4EP8fTwG/Rj+oWapNjaQ7H8yHXXyhOTnPNYEbxtvFpqx2oBgdA==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 15.5ms | Allocations: 4258874)
+
+
+  
+SyntaxError (/Users/justinc/Flatiron/code/meme_ya_later/meme_ya_later/app/models/meme.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    validates :url, presence: true
+              ^):
+  
+app/models/meme.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/meme.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/meme.rb:4: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/memes_controller.rb:16:in `create'
+Started GET "/memes" for ::1 at 2020-11-08 00:23:56 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (5.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 348.3ms | Allocations: 2752487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1394ms (Views: 958.0ms | ActiveRecord: 44.7ms | Allocations: 11871618)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:24:01 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 334.6ms | Allocations: 3177140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 634ms (Views: 564.2ms | ActiveRecord: 17.1ms | Allocations: 6062308)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:24:02 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 148.0ms | Allocations: 1363547)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 418ms (Views: 371.2ms | ActiveRecord: 3.8ms | Allocations: 3843572)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:24:06 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"mOuVAJWt1ngJo/IZQQI3ZMSPKUl1S8vahfnAhO0CNPUcWvhQzFOP8/4eLYYRmk/9/1JpgdN8xmD3s0bVdH4pvQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 325.8ms | Allocations: 2874834)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 992ms (Views: 854.0ms | ActiveRecord: 3.3ms | Allocations: 8867898)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:55:39 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"L2dSB5oY3xfjnOaC0tRnoEaeR11WD2XVMUnoSzVrceur1j9Xw+aGnBQhOR2CTB85fUMHlfA4aG9DA24arBdsow==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 256.2ms | Allocations: 2232205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1144ms (Views: 1025.6ms | ActiveRecord: 5.0ms | Allocations: 9427598)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/memes" for ::1 at 2020-11-08 00:57:25 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 205.5ms | Allocations: 2058351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1369ms (Views: 976.9ms | ActiveRecord: 26.9ms | Allocations: 13237658)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:57:31 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 316.5ms | Allocations: 3131500)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 724ms (Views: 667.7ms | ActiveRecord: 15.1ms | Allocations: 7066750)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 00:57:39 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"4jOHQA2fFp0Q9xzjZ9HJRP/U0AHxGmFmooFRIIOPieBmguoQVGFPFudKw3w3SbHdxAmQyVctbNzQy9dxGvOUqA==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 136.4ms | Allocations: 1509701)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 596ms (Views: 501.2ms | ActiveRecord: 3.5ms | Allocations: 6637534)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 00:59:12 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (4.7ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 78.1ms | Allocations: 711987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 582ms (Views: 535.7ms | ActiveRecord: 6.5ms | Allocations: 5169014)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 00:59:14 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 246.4ms | Allocations: 2075319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 542ms (Views: 471.0ms | ActiveRecord: 7.2ms | Allocations: 4906624)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:02:36 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 196.6ms | Allocations: 1824391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 686ms (Views: 646.4ms | ActiveRecord: 3.5ms | Allocations: 6612721)
+
+
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/memes" for ::1 at 2020-11-08 01:02:46 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"BwvUWYkqWXN1OQiS4OHrVffeApj/6BcOjxpyrGxviDmDurkJ0NQA+IKE1w2weZPMzANCUFnfGrT9UPT99ROVcQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (8.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 429.2ms | Allocations: 2323844)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1296ms (Views: 1180.8ms | ActiveRecord: 11.7ms | Allocations: 9450541)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:03:40 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"WIpwERBLcb8gTrtRcXO1KJU/oZRI7OSNnMRmsTsVw9fcOx1BSbUoNNfzZM4h682xruLhXO7b6TfujuDgomnenw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 202.1ms | Allocations: 2030903)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 646ms (Views: 518.3ms | ActiveRecord: 3.3ms | Allocations: 6419457)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:03:42 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (4.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 101.8ms | Allocations: 986294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1198ms (Views: 1148.2ms | ActiveRecord: 6.0ms | Allocations: 8071187)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:03:45 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 196.7ms | Allocations: 1354909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1104ms (Views: 1060.3ms | ActiveRecord: 3.4ms | Allocations: 8597188)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:03:49 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"5T5J46xzqTDbE4CgyDo6yOQQ9lhG/MiCf+ffyR604ZNhjySz9Y3wuyyuXz+YokJR3822kODLxTgNrVmYh8j82w==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 202.2ms | Allocations: 2173378)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 632ms (Views: 527.6ms | ActiveRecord: 11.5ms | Allocations: 6599748)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:04:51 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 90.7ms | Allocations: 755245)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 905ms (Views: 844.3ms | ActiveRecord: 3.0ms | Allocations: 8125680)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:04:53 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 138.3ms | Allocations: 1416923)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 595ms (Views: 547.4ms | ActiveRecord: 7.8ms | Allocations: 5925353)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:04:56 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"YzC4DFxxUmG6tDogP6vuQWzaLQt4E/Ek8A65n1q0VwPngdVcBY8L6k0J5b9vM5bYVwdtw94k/J6CRD/Ow8hKSw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 673.7ms | Allocations: 6429904)
+Completed 500 Internal Server Error in 832ms (ActiveRecord: 1.0ms | Allocations: 7874514)
+
+
+  
+ActionView::Template::Error (undefined method `full_message' for "User must exist":String):
+    2: <%= form_for @meme do |f| %>
+    3:     <% if @meme.errors.any? %>
+    4:         <% @meme.errors.full_messages.each do |error| %>
+    5:             <%= error.full_message %><br>
+    6:         <% end %>
+    7:     <% end %>
+    8:     <%= f.label :url%><br>
+  
+app/views/memes/new.html.erb:5
+app/views/memes/new.html.erb:4:in `each'
+app/views/memes/new.html.erb:4
+app/views/memes/new.html.erb:2
+app/controllers/memes_controller.rb:22:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-08 01:06:58 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 224.0ms | Allocations: 1416923)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1164ms (Views: 1113.0ms | ActiveRecord: 6.4ms | Allocations: 8841810)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:07:02 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"Hr2Iwi6qBlgd0vft/58YSXJQieWZVdPZAXYxrUv5fzaaDOWSd1Rf0+pvKHKvB2DQSY3JLT9i3mNzPLf80oVifg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 458.4ms | Allocations: 4241584)
+Completed 500 Internal Server Error in 568ms (ActiveRecord: 1.2ms | Allocations: 5429959)
+
+
+  
+ActionView::Template::Error (undefined method `details' for "User must exist":String):
+    2: <%= form_for @meme do |f| %>
+    3:     <% if @meme.errors.any? %>
+    4:         <% @meme.errors.full_messages.each do |error| %>
+    5:             <%= error.details %><br>
+    6:         <% end %>
+    7:     <% end %>
+    8:     <%= f.label :url%><br>
+  
+app/views/memes/new.html.erb:5
+app/views/memes/new.html.erb:4:in `each'
+app/views/memes/new.html.erb:4
+app/views/memes/new.html.erb:2
+app/controllers/memes_controller.rb:22:in `create'
+Started POST "/memes" for ::1 at 2020-11-08 01:07:49 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"Hr2Iwi6qBlgd0vft/58YSXJQieWZVdPZAXYxrUv5fzaaDOWSd1Rf0+pvKHKvB2DQSY3JLT9i3mNzPLf80oVifg==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 183.8ms | Allocations: 1838658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 977ms (Views: 877.6ms | ActiveRecord: 3.5ms | Allocations: 9659072)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:23:19 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 118.4ms | Allocations: 1291403)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 738ms (Views: 679.1ms | ActiveRecord: 3.2ms | Allocations: 7843726)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:23:21 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 160.3ms | Allocations: 1249963)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 597ms (Views: 539.0ms | ActiveRecord: 7.7ms | Allocations: 5847769)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:23:24 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"U5cwaWrJp4dqvLDAGP2+JiYLKxSM95TVy1+4jqKbXljXJl05Mzf+DJ0Bb19IZca/HdZr3CrAmW+5FT7fO+dDEA==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 126.3ms | Allocations: 1332351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 667ms (Views: 564.8ms | ActiveRecord: 3.1ms | Allocations: 7059129)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:23:53 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/memes" for ::1 at 2020-11-08 01:23:56 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (5.0ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 221.7ms | Allocations: 2299356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1166ms (Views: 774.1ms | ActiveRecord: 29.5ms | Allocations: 12044065)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.7ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 323.1ms | Allocations: 2749894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1682ms (Views: 1173.4ms | ActiveRecord: 27.5ms | Allocations: 13198189)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:24:04 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (4.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 617.7ms | Allocations: 5160732)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1372ms (Views: 1277.4ms | ActiveRecord: 20.2ms | Allocations: 11726619)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:24:09 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"yFCSj3mpeOqBdqBfGllY5rABSKbncHzCNxg1XK/Ub5RM4f/fIFchYXbLf8BKwSB/i9wIbkFHcXhFUrMNNqhy3A==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 185.2ms | Allocations: 1897540)
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/memes/new" for ::1 at 2020-11-08 01:31:21 -0500
+Completed 500 Internal Server Error in 432470ms (Views: 531.1ms | ActiveRecord: 3.7ms | Allocations: 7562479)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:23:in `create'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 2454.6ms | Allocations: 23447536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6985ms (Views: 6625.6ms | ActiveRecord: 3.8ms | Allocations: 66305007)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:33:13 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"5HUiyhiN0WddpwAdU1aMgHC9oVAzYe6TZakF3chjjSdgxE+aQXOI7Koa34IDzvQZS2DhmJVW4ykX44OMUR+Qbw==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 770.4ms | Allocations: 5152390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2380ms (Views: 1721.0ms | ActiveRecord: 48.0ms | Allocations: 17250931)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:39:19 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 387.4ms | Allocations: 2142216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1550ms (Views: 1165.8ms | ActiveRecord: 4.2ms | Allocations: 13033876)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:39:26 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 1471.7ms | Allocations: 14466682)
+Completed 500 Internal Server Error in 1532ms (ActiveRecord: 5.7ms | Allocations: 15030440)
+
+
+  
+ActionView::Template::Error (undefined method `category' for #<Meme:0x00007ffca2d4cc80>
+Did you mean?  category_id):
+     8:     <%= f.label :url%><br>
+     9:     <%= f.text_field :url %><br>
+    10:     <%= f.label :category %><br>
+    11:     <%= f.collection_select(:category, Category.all, :id, :name) %><br>
+    12:     <% if current_user %>
+    13:         User ID: <%= current_user.id %>
+    14:         User Name: <%= current_user.username %>
+  
+app/views/memes/new.html.erb:11
+app/views/memes/new.html.erb:2
+Started GET "/memes/new" for ::1 at 2020-11-08 01:39:28 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+Started GET "/memes/new" for ::1 at 2020-11-08 01:39:31 -0500
+Started GET "/memes/new" for ::1 at 2020-11-08 01:39:31 -0500
+Started GET "/memes/new" for ::1 at 2020-11-08 01:39:32 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendered memes/new.html.erb within layouts/application (Duration: 2875.8ms | Allocations: 27538096)
+Completed 500 Internal Server Error in 3527ms (ActiveRecord: 6.4ms | Allocations: 33082981)
+
+
+Processing by MemesController#new as HTML
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  
+ActionView::Template::Error (undefined method `category' for #<Meme:0x00007ffca6281810>
+Did you mean?  category_id):
+     8:     <%= f.label :url%><br>
+     9:     <%= f.text_field :url %><br>
+    10:     <%= f.label :category %><br>
+    11:     <%= f.collection_select(:category, Category.all, :id, :name) %><br>
+    12:     <% if current_user %>
+    13:         User ID: <%= current_user.id %>
+    14:         User Name: <%= current_user.username %>
+  
+app/views/memes/new.html.erb:11
+app/views/memes/new.html.erb:2
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  Rendering memes/new.html.erb within layouts/application
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/new.html.erb within layouts/application (Duration: 4577.3ms | Allocations: 43197657)
+Completed 500 Internal Server Error in 7580ms (ActiveRecord: 1.3ms | Allocations: 72099975)
+
+
+  Rendered memes/new.html.erb within layouts/application (Duration: 4846.8ms | Allocations: 45734829)
+Completed 500 Internal Server Error in 5694ms (ActiveRecord: 1.3ms | Allocations: 54091184)
+
+
+  
+ActionView::Template::Error (undefined method `category' for #<Meme:0x00007ffca3363df8>
+Did you mean?  category_id):
+     8:     <%= f.label :url%><br>
+     9:     <%= f.text_field :url %><br>
+    10:     <%= f.label :category %><br>
+    11:     <%= f.collection_select(:category, Category.all, :id, :name) %><br>
+    12:     <% if current_user %>
+    13:         User ID: <%= current_user.id %>
+    14:         User Name: <%= current_user.username %>
+  
+app/views/memes/new.html.erb:11
+app/views/memes/new.html.erb:2
+  
+ActionView::Template::Error (undefined method `category' for #<Meme:0x00007ffca2b01390>
+Did you mean?  category_id):
+     8:     <%= f.label :url%><br>
+     9:     <%= f.text_field :url %><br>
+    10:     <%= f.label :category %><br>
+    11:     <%= f.collection_select(:category, Category.all, :id, :name) %><br>
+    12:     <% if current_user %>
+    13:         User ID: <%= current_user.id %>
+    14:         User Name: <%= current_user.username %>
+  
+app/views/memes/new.html.erb:11
+app/views/memes/new.html.erb:2
+  Rendered memes/new.html.erb within layouts/application (Duration: 6046.8ms | Allocations: 57220383)
+Completed 500 Internal Server Error in 9048ms (ActiveRecord: 5.1ms | Allocations: 85646076)
+
+
+  
+ActionView::Template::Error (undefined method `category' for #<Meme:0x00007ffc9fe58cd0>
+Did you mean?  category_id):
+     8:     <%= f.label :url%><br>
+     9:     <%= f.text_field :url %><br>
+    10:     <%= f.label :category %><br>
+    11:     <%= f.collection_select(:category, Category.all, :id, :name) %><br>
+    12:     <% if current_user %>
+    13:         User ID: <%= current_user.id %>
+    14:         User Name: <%= current_user.username %>
+  
+app/views/memes/new.html.erb:11
+app/views/memes/new.html.erb:2
+Started GET "/memes/new" for ::1 at 2020-11-08 01:41:08 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 313.9ms | Allocations: 2919714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1502ms (Views: 1007.0ms | ActiveRecord: 41.0ms | Allocations: 14755542)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:54:17 -0500
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 680.5ms | Allocations: 3521715)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2355ms (Views: 1764.3ms | ActiveRecord: 22.8ms | Allocations: 15204540)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:54:28 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"8iWTDBEGGodl5rOYbajdf0oX7o2CLrUK6s9nklq/lPl2lP5cSPhDDJJbbAc9MKXmccquRSQZuLCYheHDw8OJsQ==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:18:in `create'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 318.8ms | Allocations: 2056772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1200ms (Views: 931.1ms | ActiveRecord: 8.6ms | Allocations: 9744093)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:55:30 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started POST "/memes" for ::1 at 2020-11-08 01:55:35 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 269.8ms | Allocations: 2427807)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1673ms (Views: 1170.0ms | ActiveRecord: 27.2ms | Allocations: 14277251)
+
+
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"k5V+6nKHoNr9fHCL0seLdqC/yHYCKf46jhenfLs/wqkXJBO6K3n5UQrBrxSCX/Pvm2KIvqQe84D8XSEtIkPf4Q==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+Completed 500 Internal Server Error in 672ms (ActiveRecord: 44.9ms | Allocations: 6258301)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/memes_controller.rb:18:in `create'
+Started GET "/memes" for ::1 at 2020-11-08 01:57:00 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/memes/new" for ::1 at 2020-11-08 01:57:04 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (5.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 312.8ms | Allocations: 2297432)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1823ms (Views: 1140.8ms | ActiveRecord: 45.7ms | Allocations: 13643462)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered memes/new.html.erb within layouts/application (Duration: 371.3ms | Allocations: 3360375)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1685ms (Views: 1111.2ms | ActiveRecord: 49.9ms | Allocations: 15822320)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:57:18 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"hc7R1hUI7+x+IlJKSOfSvfWRlIMkHaA9M4kTrVuiDqMBf7yGTPa2Z4mfjdUYf6okzkzUS4IqrYdBw5X8wt4T6w==", "meme"=>{"url"=>"https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[36mMeme Create (2.2ms)[0m  [1m[32mINSERT INTO "memes" ("url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://i.chzbgr.com/full/9270087680/hD3C4F6CC/photo-caption-front-office-calls-teacher-yea-ill-send-him-down-students-he-could-be-any-one-of-us"], ["user_id", 8], ["created_at", "2020-11-08 06:57:18.211079"], ["updated_at", "2020-11-08 06:57:18.211079"]]
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+Redirected to http://localhost:3000/memes/2
+Completed 302 Found in 239ms (ActiveRecord: 6.6ms | Allocations: 1930755)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 01:57:18 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.9ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:8:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  Rendered memes/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 157585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 808ms (Views: 607.9ms | ActiveRecord: 2.9ms | Allocations: 6150282)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:58:20 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 91.9ms | Allocations: 808656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 618ms (Views: 552.0ms | ActiveRecord: 20.2ms | Allocations: 5567454)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 01:58:28 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 120.3ms | Allocations: 1130169)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 466ms (Views: 386.1ms | ActiveRecord: 2.1ms | Allocations: 4426649)
+
+
+Started POST "/memes" for ::1 at 2020-11-08 01:58:35 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"049l+88A+Gx4wKo4NDzuO1rEuzYzsNnd4YwPiPr2/FNXPgirlv6h5499dadkpJaiYRn7/pWH1GeTxonZY4rhGw==", "meme"=>{"url"=>"https://static.wixstatic.com/media/bb1bd6_5798c09022ba43249a38bfea9be1db34~mv2.png/v1/fit/w_1000%2Ch_608%2Cal_c%2Cq_80/file.png", "category"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :category[0m
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[36mMeme Create (1.5ms)[0m  [1m[32mINSERT INTO "memes" ("url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://static.wixstatic.com/media/bb1bd6_5798c09022ba43249a38bfea9be1db34~mv2.png/v1/fit/w_1000%2Ch_608%2Cal_c%2Cq_80/file.png"], ["user_id", 8], ["created_at", "2020-11-08 06:58:35.963920"], ["updated_at", "2020-11-08 06:58:35.963920"]]
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/memes_controller.rb:19:in `create'
+Redirected to http://localhost:3000/memes/3
+Completed 302 Found in 251ms (ActiveRecord: 5.9ms | Allocations: 2181872)
+
+
+Started GET "/memes/3" for ::1 at 2020-11-08 01:58:36 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:8:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 27636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 529ms (Views: 456.8ms | ActiveRecord: 2.3ms | Allocations: 4906068)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 01:58:39 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 93.1ms | Allocations: 808898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 635ms (Views: 581.9ms | ActiveRecord: 2.8ms | Allocations: 6051663)
+
+
+Started GET "/memes/3" for ::1 at 2020-11-08 01:58:47 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (1.0ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:8:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  Rendered memes/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 331ms (Views: 225.0ms | ActiveRecord: 2.0ms | Allocations: 2914362)
+
+

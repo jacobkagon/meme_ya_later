@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(params.require(:user).permit(:name, :username,        
-    :email, :password_digest))
+    :email_address, :password_digest))
     session[:user_id] = @user.id
     redirect_to memes_path
   end
