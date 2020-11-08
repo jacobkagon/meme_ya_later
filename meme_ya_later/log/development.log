@@ -5203,3 +5203,364 @@ Processing by MemesController#show as HTML
 Completed 200 OK in 331ms (Views: 225.0ms | ActiveRecord: 2.0ms | Allocations: 2914362)
 
 
+Started GET "/" for ::1 at 2020-11-08 16:53:04 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 80.9ms | ActiveRecord: 0.7ms | Allocations: 33876)
+
+
+Started GET "/welcome" for ::1 at 2020-11-08 16:53:12 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.5ms | Allocations: 293)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 8113)
+
+
+Started GET "/login" for ::1 at 2020-11-08 16:53:18 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 519)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7803)
+
+
+Started GET "/login?name=Jacob&password_digest=[FILTERED]&commit=Login" for ::1 at 2020-11-08 16:53:22 -0500
+Processing by SessionsController#new as HTML
+  Parameters: {"name"=>"Jacob", "password_digest"=>"[FILTERED]", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7400)
+
+
+Started GET "/users/new" for ::1 at 2020-11-08 16:53:33 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 11102)
+
+
+Started POST "/users" for ::1 at 2020-11-08 16:53:48 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"21dfYWJ8DMH4ZaA/oZgyvbLsp0aECkQq7am1kmDIm5eXTMcSPGwswYFwiaK7vMma94aTQwrzSWeYsK9Xe27G6Q==", "user"=>{"name"=>"Jacob", "username"=>"jk1", "email_address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :email_address[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jacob"], ["username", "jk1"], ["created_at", "2020-11-08 21:53:48.778972"], ["updated_at", "2020-11-08 21:53:48.778972"], ["password_digest", "$2a$12$.C.NE3C9cdJ1dW.kvi9W4uzznrDcXDzR.0IO9H4PxJhtjBXqpSip2"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 243ms (ActiveRecord: 1.8ms | Allocations: 3405)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 16:53:48 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.1ms | Allocations: 63475)
+
+
+  
+NoMethodError (undefined method `require_login' for #<MemesController:0x00007fd9c9d46980>
+Did you mean?  require):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-08 16:55:35 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 6319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 12.8ms | ActiveRecord: 1.1ms | Allocations: 23679)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-08 16:55:51 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:11
+  Rendered memes/new.html.erb within layouts/application (Duration: 28.7ms | Allocations: 7714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.6ms | Allocations: 15485)
+
+
+Started POST "/logout" for ::1 at 2020-11-08 16:56:22 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QW0MAxu/w/pQtQza59Dl6gE5NhTd5/xCSspu/KxXDo4NdpRwRa/j+imgJUf99B7NRFMCEVMe8Q8/03Q5t/FT8A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1037)
+
+
+Started GET "/welcome" for ::1 at 2020-11-08 16:56:22 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 7454)
+
+
+Started GET "/login" for ::1 at 2020-11-08 16:56:26 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 7400)
+
+
+Started GET "/login?name=jk1&password_digest=[FILTERED]&commit=Login" for ::1 at 2020-11-08 16:56:31 -0500
+Processing by SessionsController#new as HTML
+  Parameters: {"name"=>"jk1", "password_digest"=>"[FILTERED]", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 7392)
+
+
+Started GET "/" for ::1 at 2020-11-08 17:19:06 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms | Allocations: 5523)
+
+
+Started GET "/welcome" for ::1 at 2020-11-08 17:19:06 -0500
+  
+SyntaxError (/Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/sessions_controller.rb:9: syntax error, unexpected ')', expecting ']'
+...y(name: params[:session[:name])
+...                              ^
+/Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+        flash.now[:danger] ' "Bad name/password combinati...
+                           ^):
+  
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ')', expecting ']'
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ')', expecting ']'
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+app/controllers/sessions_controller.rb:9: syntax error, unexpected ')', expecting ']'
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+Started GET "/welcome" for ::1 at 2020-11-08 17:19:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+        flash.now[:danger] ' "Bad name/password combinati...
+                           ^):
+  
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+app/controllers/sessions_controller.rb:14: syntax error, unexpected tSTRING_BEG, expecting end
+Started GET "/welcome" for ::1 at 2020-11-08 17:20:23 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/sessions_controller.rb:37: unterminated string meets end of file
+/Users/jacobkagon/Flatiron/code/meme_ya_later/meme_ya_later/app/controllers/sessions_controller.rb:37: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_controller.rb:37: unterminated string meets end of file
+app/controllers/sessions_controller.rb:37: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:37: unterminated string meets end of file
+app/controllers/sessions_controller.rb:37: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:37: unterminated string meets end of file
+app/controllers/sessions_controller.rb:37: syntax error, unexpected end-of-input, expecting end
+Started GET "/welcome" for ::1 at 2020-11-08 17:23:49 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.5ms | Allocations: 295)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2784)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        Hi <%=current_user.name%>
+        |
+        <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            Hi <%=current_user.name%>
+16:            |
+17:            <%=link_to "Log out", logout_path, method: :delete%>
+18:          <%else%>
+19:          <%=link_to "Login", login_path%>
+20:          |
+21:          <%=link_to "Sign Up", new_user_path%>
+22:        </header>
+23:        <%= yield %>
+24:      </body>
+25:    </html>
+  
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:28: syntax error, unexpected end-of-input, expecting end
+Started GET "/welcome" for ::1 at 2020-11-08 17:24:40 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.6ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.6ms | Allocations: 24064)
+
+
+Started GET "/login" for ::1 at 2020-11-08 17:24:50 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 555)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 8635)
+
+
+Started GET "/login" for ::1 at 2020-11-08 17:24:56 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 8191)
+
+
+Started GET "/login?name=Jacob&password=[FILTERED]&commit=Login" for ::1 at 2020-11-08 17:25:01 -0500
+Processing by SessionsController#new as HTML
+  Parameters: {"name"=>"Jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 8212)
+
+

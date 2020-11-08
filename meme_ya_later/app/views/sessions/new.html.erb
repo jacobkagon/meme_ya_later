@@ -1,10 +1,17 @@
 <h1>Login</h1>
+
    <%= form_tag '/login', method: 'get' do %>
+   <div class = 'danger'>
+   <%=flash[:danger]%>
+   </div>
+   
+<div class="actions">
    <%= label_tag :name%>
    <%= text_field_tag :name %>
    <%= label_tag :password%>
-   <%= password_field_tag :password_digest%>
+   <%= password_field_tag :password%>
    <%= submit_tag "Login"%>
 <%end%><br>
+</div>
 
 <div><%=button_to "Back to Create an Account", new_user_path, method: 'get'%></div>

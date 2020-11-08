@@ -2,17 +2,17 @@ class SessionsController < ApplicationController
   skip_before_action :authorized, only: [:new, :create, :welcome]
   
   def new
-    render :new
+    
   end
 
     def create
-       @user = User.find_by(name: params[:name])
-      if @user && @user.authenticate(params[:password_digest])
+       @user = User.find_by(name: params[:session][:name])
+      if @user && @user.authenticate(params[:session][:password_digest])
        session[:user_id] = @user.id
        redirect_to memes_path
       else
-        "Invalid Login. Please try again or create an account."
-        redirect_to login_path
+        flash.now[:danger] = "Bad name/password combination. Please try again."
+       render :new
       end
     end
 
@@ -28,6 +28,7 @@ class SessionsController < ApplicationController
     def page_requires_login
       
     end
+    
     def destroy
       session.delete :user_id
       redirect_to welcome_path
