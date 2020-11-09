@@ -1,2 +1,4 @@
-<h1>Memes#show</h1>
-<p>Find me in app/views/memes/show.html.erb</p>
+Posted by: <div><strong><%= link_to @meme.user.username, user_path(@meme.user.id) %></strong></div>
+on <br><%= @meme.created_at %><br>
+<%= image_tag @meme.url %>
+
