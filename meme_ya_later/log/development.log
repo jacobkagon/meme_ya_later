@@ -11480,3 +11480,162 @@ Processing by MemesController#new as HTML
 Completed 200 OK in 1864ms (Views: 1790.6ms | ActiveRecord: 16.4ms | Allocations: 11039195)
 
 
+Started GET "/memes" for ::1 at 2020-11-09 16:24:54 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 5431)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 182ms (Views: 131.7ms | ActiveRecord: 1.6ms | Allocations: 35327)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-09 16:24:56 -0500
+Processing by MemesController#new as HTML
+  Parameters: {"authenticity_token"=>"Wi7HcFMRPwWRStSJFZU05pzaMTDO4fQZNq9QF0OInePen6ogCu9mjmb3CxZFDUx/pwdx+GjW+aNE5dZG2vSAqw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 6891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 1.4ms | Allocations: 14796)
+
+
+Started POST "/memes" for ::1 at 2020-11-09 16:24:59 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"ydBTwJwm3S77FFYTlkRjQ/TCHy/JzppsyqpYSOy/GjBNYT6QxdiEpQypiYzG3Bvazx9f52/5l9a44N4ZdcMHeA==", "meme"=>{"url"=>"https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg", "category_id"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 500 Internal Server Error in 67021ms (ActiveRecord: 0.2ms | Allocations: 206758)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/memes_controller.rb:19:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-09 16:26:12 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#new as HTML
+  Parameters: {"authenticity_token"=>"ydBTwJwm3S77FFYTlkRjQ/TCHy/JzppsyqpYSOy/GjBNYT6QxdiEpQypiYzG3Bvazx9f52/5l9a44N4ZdcMHeA=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 174.8ms | Allocations: 1780505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 900ms (Views: 536.1ms | ActiveRecord: 25.6ms | Allocations: 9403948)
+
+
+Started POST "/memes" for ::1 at 2020-11-09 16:26:24 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"m9HPj8e5xgXMTcA+A4kNlebSl1L0QpbOo/uIYtDCRj0fYKLfnkefjjvwH6FTEXUM3Q/XmlJ1m3TRsQ4zSb5bdQ==", "meme"=>{"url"=>"https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg", "category_id"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mMeme Create (2.3ms)[0m  [1m[32mINSERT INTO "memes" ("url", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg"], ["user_id", 13], ["category_id", 1], ["created_at", "2020-11-09 21:26:24.574826"], ["updated_at", "2020-11-09 21:26:24.574826"]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 10.8ms | Allocations: 2217030)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/memes/new" for ::1 at 2020-11-09 16:27:59 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 77.2ms | Allocations: 839921)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 457ms (Views: 394.6ms | ActiveRecord: 6.2ms | Allocations: 5070425)
+
+
+Started POST "/memes" for ::1 at 2020-11-09 16:28:05 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"Q2Aum2mGEV63Gz0ld9Q32kUZcyedgRm0IaPdcHYOXYPH0UPLMHhI1UCm4ronTE9DfsQz7zu2FA5T6Vsh73JAyw==", "meme"=>{"url"=>"https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg", "category_id"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mMeme Create (2.2ms)[0m  [1m[32mINSERT INTO "memes" ("url", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg"], ["user_id", 13], ["category_id", 1], ["created_at", "2020-11-09 21:28:05.935309"], ["updated_at", "2020-11-09 21:28:05.935309"]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 10.1ms | Allocations: 2364681)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/memes_controller.rb:22:in `create'
+Started GET "/memes/new" for ::1 at 2020-11-09 16:29:03 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (5.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 95.7ms | Allocations: 774079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 414ms (Views: 346.3ms | ActiveRecord: 12.8ms | Allocations: 3494755)
+
+
+Started POST "/memes" for ::1 at 2020-11-09 16:29:08 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"authenticity_token"=>"RRytxKSlheXT78MWsqcCHDRI/M3/UbNldG6LQmRQqG3BrcCU/VvcbiRSHIniP3qFD5W8BVlmvt8GJA0T/Sy1JQ==", "meme"=>{"url"=>"https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg", "category_id"=>"1"}, "commit"=>"Post Meme"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mCategory Load (12.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[36mMeme Create (8.8ms)[0m  [1m[32mINSERT INTO "memes" ("url", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://www.memesmonkey.com/images/memesmonkey/5d/5dd94c56061597f7095fd424623eee88.jpeg"], ["user_id", 13], ["category_id", 1], ["created_at", "2020-11-09 21:29:08.267960"], ["updated_at", "2020-11-09 21:29:08.267960"]]
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/memes_controller.rb:22:in `create'
+Redirected to http://localhost:3000/memes/8
+Completed 302 Found in 309ms (ActiveRecord: 25.2ms | Allocations: 2142574)
+
+
+Started GET "/memes/8" for ::1 at 2020-11-09 16:29:08 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (1.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 78.4ms | Allocations: 617843)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 763ms (Views: 592.2ms | ActiveRecord: 2.9ms | Allocations: 6539573)
+
+

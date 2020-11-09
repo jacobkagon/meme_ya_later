@@ -15,7 +15,7 @@ class MemesController < ApplicationController
   end
 
   def create
-    byebug
+    
     @meme = Meme.new(meme_params)
     @meme.user_id = session[:user_id]
     
