@@ -6,13 +6,13 @@ class SessionsController < ApplicationController
   end
 
     def create
-       @user = User.find_by(name: params[:session][:name])
-      if @user && @user.authenticate(params[:session][:password_digest])
-       session[:user_id] = @user.id
-       redirect_to memes_path
+       @user = User.find_by(username: params[:username])
+      if @user && @user.authenticate(params[:password])
+       session[:user_id] = @user.id 
+       redirect_to memes_path, :flash => {:success => "You are Logged in as #{current_user.username}"} 
       else
         flash.now[:danger] = "Bad name/password combination. Please try again."
-       render :new
+        render :new
       end
     end
 

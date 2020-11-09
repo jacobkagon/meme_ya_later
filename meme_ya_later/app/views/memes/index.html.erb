@@ -1,15 +1,9 @@
-<h1> Memes </h1>
-<% if logged_in? %>
-    <h1>You are Logged In, <%= current_user.username %></h1>
-<%end%>
-<%= button_to 'Logout', logout_path %>
+<h1> Memes Timeline</h1>
 
-<%= button_to 'Post Meme', new_meme_path, method: :get %>
-
-<% @memes.each do |meme| %>
-    <div><%= link_to meme_path(meme) do %>
-        <%= image_tag meme.url %></div>
-    <% end %>
+<% @memes.order(created_at: :desc).each do |meme| %>
+    <div><%= link_to meme_path(meme) do %><br>
+        <%= image_tag meme.url%></div>
+   <% end %>
 <%end%><br>
 
 

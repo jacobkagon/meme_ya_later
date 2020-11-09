@@ -12,16 +12,21 @@
   <body>
     <header>
       <%if current_user %>
-        Hi <%=current_user.name%>
+        <%=current_user.name%>
         |
-        <%=link_to "Log out", logout_path, method: :delete%>
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
       <%else%>
       <%=link_to "Login", login_path%>
       |
       <%=link_to "Sign Up", new_user_path%>
       <%end%>
-      |
-      <%=link_to 'Home', memes_path%>
+      
     </header>
     <%= yield %>
   </body>

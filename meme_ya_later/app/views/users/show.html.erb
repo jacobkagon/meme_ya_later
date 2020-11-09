@@ -1,13 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @user.name %></h1>
+<%= button_to 'Post Meme', new_meme_path, method: :get %>
 
 <% @user.memes.each do |meme| %>
-  <h2><%= link_to meme_path(meme) %></h2>
+  <h2><%= link_to meme_path(meme) do %></h2>
   <% if meme.url.present? %>
     <p><%= image_tag meme.url %></p>
   <% else %>
   <%= meme.file %>
   <% end %>
-    <p><%# meme.body.truncate(100) %></p> -->
+    <p><%# meme.body.truncate(100) %></p>
 <% end %>
+<%end%>
+
+
