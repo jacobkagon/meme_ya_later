@@ -11858,3 +11858,941 @@ Processing by MemesController#show as HTML
 Completed 200 OK in 763ms (Views: 592.2ms | ActiveRecord: 2.9ms | Allocations: 6539573)
 
 
+Started GET "/memes" for ::1 at 2020-11-09 16:53:29 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 1.7ms | Allocations: 42768)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    25:            <i class = "fa fa-caret-down"></i>
+    26:          </button>
+    27:       <div class ="dropdown-content">
+    28:          <%=@categories.each do |category|%>   
+    29:         <%=link_to category.name category_path(category.id)%> 
+    30:         <%end%>  
+    31:       |
+  
+app/views/layouts/application.html.erb:28
+Started GET "/memes" for ::1 at 2020-11-09 16:56:01 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1213)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 4207)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        <%=current_user.name%>
+        |
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+       <div class ="dropdonw">
+         <button class="dropbtn">Categories
+           <i class = "fa fa-caret-down"></i>
+         </button>
+      <div class ="dropdown-content">
+         <%=collection_select(:category, Category.all, :id, :name)
+        <%end%>  
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+      <%end%>
+      
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            <%=current_user.name%>
+16:            |
+17:            <%=link_to 'Home', memes_path%>
+18:          |
+19:          <%=link_to "Profile", user_path(current_user)%>
+20:          |
+21:          <%= link_to 'Post Meme', new_meme_path, method: :get %>
+22:          |
+23:           <div class ="dropdonw">
+24:             <button class="dropbtn">Categories
+25:               <i class = "fa fa-caret-down"></i>
+26:             </button>
+27:          <div class ="dropdown-content">
+28:             <%=collection_select(:category, Category.all, :id, :name)
+29:            <%end%>  
+30:          |
+31:          <%=link_to "Log out", logout_path, method: :delete%>
+32:          <%else%>
+33:          <%=link_to "Login", login_path%>
+34:          |
+35:          <%=link_to "Sign Up", new_user_path%>
+36:          <%end%>
+37:          
+38:        </header>
+39:        <%= yield %>
+40:      </body>
+41:    </html>
+  
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:29: unknown type of %string
+Started GET "/memes" for ::1 at 2020-11-09 16:56:10 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1033)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 3247)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        <%=current_user.name%>
+        |
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+       <div class ="dropdonw">
+         <button class="dropbtn">Categories
+           <i class = "fa fa-caret-down"></i>
+         </button>
+      <div class ="dropdown-content">
+         <%=collection_select(:category, Category.all, :id, :name)
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+      <%end%>
+      
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            <%=current_user.name%>
+16:            |
+17:            <%=link_to 'Home', memes_path%>
+18:          |
+19:          <%=link_to "Profile", user_path(current_user)%>
+20:          |
+21:          <%= link_to 'Post Meme', new_meme_path, method: :get %>
+22:          |
+23:           <div class ="dropdonw">
+24:             <button class="dropbtn">Categories
+25:               <i class = "fa fa-caret-down"></i>
+26:             </button>
+27:          <div class ="dropdown-content">
+28:             <%=collection_select(:category, Category.all, :id, :name)
+29:          |
+30:          <%=link_to "Log out", logout_path, method: :delete%>
+31:          <%else%>
+32:          <%=link_to "Login", login_path%>
+33:          |
+34:          <%=link_to "Sign Up", new_user_path%>
+35:          <%end%>
+36:          
+37:        </header>
+38:        <%= yield %>
+39:      </body>
+40:    </html>
+  
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected '|', expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:35: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected end, expecting ')'
+Started GET "/memes" for ::1 at 2020-11-09 16:56:41 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms | Allocations: 13576)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 5..7)):
+    25:            <i class = "fa fa-caret-down"></i>
+    26:          </button>
+    27:       <div class ="dropdown-content">
+    28:          <%=collection_select(:category, Category.all, :id, :name)%>
+    29:       |
+    30:       <%=link_to "Log out", logout_path, method: :delete%>
+    31:       <%else%>
+  
+app/views/layouts/application.html.erb:28
+Started GET "/memes" for ::1 at 2020-11-09 16:57:03 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:28
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 1.6ms | Allocations: 14542)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 16:57:58 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:28
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms | Allocations: 11670)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"categories", :id=>nil}, missing required keys: [:id]):
+    25:            <i class = "fa fa-caret-down"></i>
+    26:          </button>
+    27:       <div class ="dropdown-content">
+    28:          <%=link_to collection_select(:category, :category_id, Category.all, :id, :name), category_path(@category)%>
+    29:       |
+    30:       <%=link_to "Log out", logout_path, method: :delete%>
+    31:       <%else%>
+  
+app/views/layouts/application.html.erb:28
+Started GET "/memes" for ::1 at 2020-11-09 16:58:20 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:28
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.4ms | Allocations: 10977)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 16:59:11 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 10954)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 17:06:33 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1225)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 4203)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        <%=current_user.name%>
+        |
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+       
+      <%=collection_select(:category, :category_id, Category.all, :id, link_to :name, categories_path%>
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+      <%end%>
+      
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            <%=current_user.name%>
+16:            |
+17:            <%=link_to 'Home', memes_path%>
+18:          |
+19:          <%=link_to "Profile", user_path(current_user)%>
+20:          |
+21:          <%= link_to 'Post Meme', new_meme_path, method: :get %>
+22:          |
+23:           
+24:          <%=collection_select(:category, :category_id, Category.all, :id, link_to :name, categories_path%>
+25:          |
+26:          <%=link_to "Log out", logout_path, method: :delete%>
+27:          <%else%>
+28:          <%=link_to "Login", login_path%>
+29:          |
+30:          <%=link_to "Sign Up", new_user_path%>
+31:          <%end%>
+32:          
+33:        </header>
+34:        <%= yield %>
+35:      </body>
+36:    </html>
+  
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:24: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/memes" for ::1 at 2020-11-09 17:07:08 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1206)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 4166)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        <%=current_user.name%>
+        |
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+       
+      <%=collection_select(:category, :category_id, Category.all, :id, :name%>
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+      <%end%>
+      
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            <%=current_user.name%>
+16:            |
+17:            <%=link_to 'Home', memes_path%>
+18:          |
+19:          <%=link_to "Profile", user_path(current_user)%>
+20:          |
+21:          <%= link_to 'Post Meme', new_meme_path, method: :get %>
+22:          |
+23:           
+24:          <%=collection_select(:category, :category_id, Category.all, :id, :name%>
+25:          |
+26:          <%=link_to "Log out", logout_path, method: :delete%>
+27:          <%else%>
+28:          <%=link_to "Login", login_path%>
+29:          |
+30:          <%=link_to "Sign Up", new_user_path%>
+31:          <%end%>
+32:          
+33:        </header>
+34:        <%= yield %>
+35:      </body>
+36:    </html>
+  
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+Started GET "/memes" for ::1 at 2020-11-09 17:07:11 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1206)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 4166)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%if current_user %>
+        <%=current_user.name%>
+        |
+        <%=link_to 'Home', memes_path%>
+      |
+      <%=link_to "Profile", user_path(current_user)%>
+      |
+      <%= link_to 'Post Meme', new_meme_path, method: :get %>
+      |
+       
+      <%=collection_select(:category, :category_id, Category.all, :id, :name%>
+      |
+      <%=link_to "Log out", logout_path, method: :delete%>
+      <%else%>
+      <%=link_to "Login", login_path%>
+      |
+      <%=link_to "Sign Up", new_user_path%>
+      <%end%>
+      
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:        <header>
+14:          <%if current_user %>
+15:            <%=current_user.name%>
+16:            |
+17:            <%=link_to 'Home', memes_path%>
+18:          |
+19:          <%=link_to "Profile", user_path(current_user)%>
+20:          |
+21:          <%= link_to 'Post Meme', new_meme_path, method: :get %>
+22:          |
+23:           
+24:          <%=collection_select(:category, :category_id, Category.all, :id, :name%>
+25:          |
+26:          <%=link_to "Log out", logout_path, method: :delete%>
+27:          <%else%>
+28:          <%=link_to "Login", login_path%>
+29:          |
+30:          <%=link_to "Sign Up", new_user_path%>
+31:          <%end%>
+32:          
+33:        </header>
+34:        <%= yield %>
+35:      </body>
+36:    </html>
+  
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:27: syntax error, unexpected else, expecting ')'
+app/views/layouts/application.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:39: syntax error, unexpected end, expecting ')'
+Started GET "/memes" for ::1 at 2020-11-09 17:07:34 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.5ms | Allocations: 10028)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-09 17:08:19 -0500
+Processing by MemesController#new as HTML
+  Parameters: {"authenticity_token"=>"Xf5Xzul4S/pUd8R8FU7qiUBGH8w3sCAyH+YnsjhrWDZ9ur6CUCYrKXWftzDs6cLXDAGacoAVB4Da0LogHUco+w=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3592)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 13264)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 17:08:28 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 9950)
+
+
+Started GET "/users/9" for ::1 at 2020-11-09 17:08:29 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 9]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4197)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 30ms (Views: 25.2ms | ActiveRecord: 0.8ms | Allocations: 13984)
+
+
+Started GET "/users/9" for ::1 at 2020-11-09 17:33:41 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 9]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1200)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 25ms (Views: 13.2ms | ActiveRecord: 0.6ms | Allocations: 11507)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-09 17:33:42 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c9z8ZCJir/54mPk19gemCDpISmPjJpobh8VQ1M0nAVNTmBUomzzPLVlwinkPoI5Wdg/P3VSDvalC881G6Atxng=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/welcome" for ::1 at 2020-11-09 17:33:42 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 8639)
+
+
+Started GET "/users/new" for ::1 at 2020-11-09 17:33:53 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1913)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 9886)
+
+
+Started GET "/users/new" for ::1 at 2020-11-09 17:38:09 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1206)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2386)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Sign Up</h1>
+<%= form_for @user, :html => {:class => "form-horizontal center"} do |f|%>
+<div class = "form-group">
+  <%= f.label :name, class: 'col-md4 control-label'%><br>
+  <div class="col-md-8">
+  <%=f.text_field :name, class: "form-control"%><br>
+  </div>
+</div>
+<div class="form-group">
+<%= f.label :username, class: 'col-md4 control-label' %><br>
+<%= f.text_field :username, class: "form-control"%><br>
+<%= f.label :email, class:  "col-md4 control-label" %><br>
+<%= f.text_field :email_address, class: "form-control" %><br>
+<%= f.label :password, class: 'col-md4 control-label' %><br>
+<%= f.password_field :password, class: "form-control" %><br>
+<%= f.label :password_confirmation, class: 'col-md4 control-label'  %><br>
+<%= f.password_field :password_confirmation, class: "form-control" %><br>
+<%= f.submit, class: "btn btn-default btn-primary"%>
+<%end%>
+
+):
+1:    <h1>Sign Up</h1>
+2:    <%= form_for @user, :html => {:class => "form-horizontal center"} do |f|%>
+3:    <div class = "form-group">
+4:      <%= f.label :name, class: 'col-md4 control-label'%><br>
+5:      <div class="col-md-8">
+6:      <%=f.text_field :name, class: "form-control"%><br>
+7:      </div>
+8:    </div>
+9:    <div class="form-group">
+10:    <%= f.label :username, class: 'col-md4 control-label' %><br>
+11:    <%= f.text_field :username, class: "form-control"%><br>
+12:    <%= f.label :email, class:  "col-md4 control-label" %><br>
+13:    <%= f.text_field :email_address, class: "form-control" %><br>
+14:    <%= f.label :password, class: 'col-md4 control-label' %><br>
+15:    <%= f.password_field :password, class: "form-control" %><br>
+16:    <%= f.label :password_confirmation, class: 'col-md4 control-label'  %><br>
+17:    <%= f.password_field :password_confirmation, class: "form-control" %><br>
+18:    <%= f.submit, class: "btn btn-default btn-primary"%>
+19:    <%end%>
+  
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+app/views/users/new.html.erb:18: syntax error, unexpected tLABEL, expecting '='
+Started GET "/users/new" for ::1 at 2020-11-09 17:38:53 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1556)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 10529)
+
+
+Started GET "/users/new" for ::1 at 2020-11-09 17:43:34 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 10540)
+
+
+Started POST "/users" for ::1 at 2020-11-09 17:50:42 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"TWNdvAjOBMxQa2mVjDCsfn10VroO5b7azuWl/lAtoAhtJ7TwsZBkH3GDGtl1l4QgMTPTBLlAmWgL0zhsdQHQxQ==", "user"=>{"name"=>"Paul", "username"=>"paulnicholsen27", "email_address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+[31mUnpermitted parameter: :email_address[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Paul"], ["username", "paulnicholsen27"], ["created_at", "2020-11-09 22:50:42.960970"], ["updated_at", "2020-11-09 22:50:42.960970"], ["password_digest", "$2a$12$5ToJfShf0QEy8NUotTuO0OvgNjQoBwXLIlh2JVb7RUMDPH5wKWCHq"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 244ms (ActiveRecord: 1.6ms | Allocations: 3253)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 17:50:42 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1224)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.4ms | Allocations: 10447)
+
+
+Started GET "/users/13" for ::1 at 2020-11-09 17:51:00 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.7ms | Allocations: 10409)
+
+
+Started GET "/memes" for ::1 at 2020-11-09 17:51:07 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 9639)
+
+
+Started GET "/users/13" for ::1 at 2020-11-09 17:51:08 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms | Allocations: 9931)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-09 17:51:16 -0500
+Processing by MemesController#new as HTML
+  Parameters: {"authenticity_token"=>"afNIJ4YuJuU3TklcLu06TGoRSLRjvCQlIbrz4IKayQBJt6FrP3BGNhamOhDXShISJlbNCtQZA5fkjG5yp7a5zQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 10581)
+
+
+Started GET "/users/13" for ::1 at 2020-11-09 17:51:17 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 9945)
+
+

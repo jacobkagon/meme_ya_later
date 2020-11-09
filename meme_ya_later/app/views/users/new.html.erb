@@ -1,14 +1,34 @@
 <h1>Sign Up</h1>
-<%= form_for @user do |f|%>
-<%= f.label :name%><br>
-<%=f.text_field :name%><br>
-<%= f.label :username%><br>
-<%= f.text_field :username%><br>
-<%= f.label :email%><br>
-<%= f.text_field :email_address%><br>
-<%= f.label :password%><br>
-<%= f.password_field :password %><br>
-<%= f.label :password_confirmation%><br>
-<%= f.password_field :password_confirmation%><br>
-<%= f.submit %>
+<%= form_for @user, :html => {:class => "form-horizontal center"} do |f|%>
+<div class = "form-group">
+  <%= f.label :name, class: 'col-md4 control-label'%><br>
+  <div class="col-md-8">
+  <%=f.text_field :name, class: "form-control"%><br>
+  </div>
+</div>
+<div class="form-group">
+  <%= f.label :username, class: 'col-md4 control-label' %><br>
+  <div class="col-md-8">
+  <%= f.text_field :username, class: "form-control"%><br>
+  </div>
+</div>
+<div class="form-group">
+  <%= f.label :email, class:  "col-md4 control-label" %><br>
+  <div class= "col-md-8">
+  <%= f.text_field :email_address, class: "form-control" %><br>
+  </div>
+</div>
+<div class="form-group"> 
+  <%= f.label :password, class: 'col-md4 control-label' %><br>
+  <div class= "col-md-8">
+  <%= f.password_field :password, class: "form-control" %><br>
+  </div>
+</div>
+<div class="form-group"> 
+  <%= f.label :password_confirmation, class: 'col-md4 control-label'  %><br>
+  <div class= "col-md-8">
+  <%= f.password_field :password_confirmation, class: "form-control" %><br>
+  </div>
+</div>
+<%= f.submit "Submit", class: "btn btn-default btn-primary" %>
 <%end%>

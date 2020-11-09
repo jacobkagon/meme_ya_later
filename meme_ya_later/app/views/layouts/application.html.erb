@@ -20,18 +20,8 @@
       |
       <%= link_to 'Post Meme', new_meme_path, method: :get %>
       |
-       <ul class="nav nav-pills">
-            <li class="dropdown" id="@categories">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="@categories">
-                ADMIN
-              </a>
-              <ul class="dropdown-menu">
-                <% @categories.each do |category| %>
-                    <li><a href=" <%= category.name %></a></li>
-                <% end %>
-              </ul>
-            </li>
-          </ul>
+       
+      <%=collection_select(:category, :category_id, Category.all, :id, :name)%>
       |
       <%=link_to "Log out", logout_path, method: :delete%>
       <%else%>
