@@ -1,3 +1,4 @@
-
+Posted by: <div><strong><%= link_to @meme.user.username, user_path(@meme.user.id) %></strong></div>
+on <br><%= @meme.created_at %><br>
 <%= image_tag @meme.url %>
-<div><strong><%= @meme.user.username%></strong></div>
+

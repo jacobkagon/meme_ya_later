@@ -6544,3 +6544,834 @@ Processing by MemesController#show as HTML
 Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 8947)
 
 
+Started GET "/memes/2" for ::1 at 2020-11-08 23:47:31 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 5308)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 191ms (Views: 152.5ms | ActiveRecord: 2.1ms | Allocations: 53505)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 23:47:33 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1366)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 9205)
+
+
+Started GET "/memes" for ::1 at 2020-11-08 23:47:48 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:9
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 10097)
+
+
+Started GET "/memes/1" for ::1 at 2020-11-08 23:50:40 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 903)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.4ms | Allocations: 10224)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:50:43 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms | Allocations: 9016)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:51:01 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  Rendered memes/show.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4556)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms | Allocations: 6807)
+
+
+  
+ActionView::Template::Error (undefined method `date' for Sun, 08 Nov 2020 06:57:18 UTC +00:00:Time):
+    1: <%= @meme.created_at.date %>
+    2: <%= image_tag @meme.url %>
+    3: <div><strong><%= @meme.user.username%></strong></div>
+  
+app/views/memes/show.html.erb:1
+Started GET "/memes/2" for ::1 at 2020-11-08 23:51:32 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 10274)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:51:35 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 8989)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:51:45 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.4ms | Allocations: 10194)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:52:15 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:3
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 10204)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:52:57 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.3ms | Allocations: 10201)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:53:14 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 10205)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:53:27 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.4ms | Allocations: 10204)
+
+
+Started GET "/memes/2" for ::1 at 2020-11-08 23:54:25 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 10229)
+
+
+Started GET "/users/8" for ::1 at 2020-11-08 23:54:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2913)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 5151)
+
+
+  
+ActionView::Template::Error (undefined method `posts' for #<User:0x00007fdd269e10a0>):
+    2: 
+    3: <h1><%= @user.name %></h1>
+    4: 
+    5: <% @user.posts.each do |post| %>
+    6:   <h2><%= link_to post.title, post %></h2>
+    7:   <% if post.photo.present? %>
+    8:     <p><%= image_tag post.photo.url(:thumb) %></p>
+  
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:40:50 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.5ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 31.4ms | Allocations: 8179)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.0ms | Allocations: 10444)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Meme:0x00007fdd26570818>):
+    3: <h1><%= @user.name %></h1>
+    4: 
+    5: <% @user.memes.each do |meme| %>
+    6:   <h2><%= link_to meme.title, post %></h2>
+    7:   <% if meme.url.present? %>
+    8:     <p><%= image_tag meme.url(:thumb) %></p>
+    9:   <% end %>
+  
+app/views/users/show.html.erb:6
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:40:52 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3190)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 4691)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Meme:0x00007fdd265e9358>):
+    3: <h1><%= @user.name %></h1>
+    4: 
+    5: <% @user.memes.each do |meme| %>
+    6:   <h2><%= link_to meme.title, post %></h2>
+    7:   <% if meme.url.present? %>
+    8:     <p><%= image_tag meme.url(:thumb) %></p>
+    9:   <% end %>
+  
+app/views/users/show.html.erb:6
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:42:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2531)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 4775)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     5: <% @user.memes.each do |meme| %>
+     6:   <h2><%= link_to meme_path(meme) %></h2>
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url(:thumb) %></p>
+     9:   <% end %>
+    10:   <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:8
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:42:47 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1757)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3258)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     5: <% @user.memes.each do |meme| %>
+     6:   <h2><%= link_to meme_path(meme) %></h2>
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url(:thumb) %></p>
+     9:   <% end %>
+    10:   <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:8
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:42:48 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1760)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 3260)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     5: <% @user.memes.each do |meme| %>
+     6:   <h2><%= link_to meme_path(meme) %></h2>
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url(:thumb) %></p>
+     9:   <% end %>
+    10:   <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:8
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:42:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3561)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 5805)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd267210e0>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:42:57 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 3294)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms | Allocations: 4797)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd29bd3c98>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:43:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3530)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 5774)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd22c1ed08>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   # <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:43:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3290)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 4791)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd2991e458>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   # <p><%= meme.body.truncate(100) %></p>
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:43:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 121.8ms | ActiveRecord: 0.4ms | Allocations: 31239)
+
+
+Started GET "/users/8" for ::1 at 2020-11-09 00:45:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3530)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms | Allocations: 5786)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd29b3a390>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <!--  <p><%= meme.body.truncate(100) %></p>-->
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:45:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3529)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 5784)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd26611858>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <!--  <p><%= meme.body.truncate(100) %></p> -->
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:45:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3292)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 4804)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd266931a0>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <!--  <p><% meme.body.truncate(100) %></p> -->
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:45:37 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3522)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms | Allocations: 5777)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Meme:0x00007fdd236e1a60>):
+     7:   <% if meme.url.present? %>
+     8:     <p><%= image_tag meme.url %></p>
+     9:   <% end %>
+    10:   <!--  <p><% meme.body.truncate(100) %></p> -->
+    11: <% end %>
+  
+app/views/users/show.html.erb:10
+app/views/users/show.html.erb:5
+Started GET "/users/8" for ::1 at 2020-11-09 00:46:24 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1125)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 3381)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1><%= @user.name %></h1>
+
+<% @user.memes.each do |meme| %>
+  <h2><%= link_to meme_path(meme) %></h2>
+  <% if meme.url.present? %>
+    <p><%= image_tag meme.url %></p>
+  <% end %>
+  <!--  <p><%=# meme.body.truncate(100) %></p> -->
+<% end %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1><%= @user.name %></h1>
+4:    
+5:    <% @user.memes.each do |meme| %>
+6:      <h2><%= link_to meme_path(meme) %></h2>
+7:      <% if meme.url.present? %>
+8:        <p><%= image_tag meme.url %></p>
+9:      <% end %>
+10:      <!--  <p><%=# meme.body.truncate(100) %></p> -->
+11:    <% end %>
+  
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/8" for ::1 at 2020-11-09 00:46:27 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1107)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2619)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1><%= @user.name %></h1>
+
+<% @user.memes.each do |meme| %>
+  <h2><%= link_to meme_path(meme) %></h2>
+  <% if meme.url.present? %>
+    <p><%= image_tag meme.url %></p>
+  <% end %>
+  <!--  <p><%=# meme.body.truncate(100) %></p> -->
+<% end %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1><%= @user.name %></h1>
+4:    
+5:    <% @user.memes.each do |meme| %>
+6:      <h2><%= link_to meme_path(meme) %></h2>
+7:      <% if meme.url.present? %>
+8:        <p><%= image_tag meme.url %></p>
+9:      <% end %>
+10:      <!--  <p><%=# meme.body.truncate(100) %></p> -->
+11:    <% end %>
+  
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/8" for ::1 at 2020-11-09 00:46:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1125)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3381)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1><%= @user.name %></h1>
+
+<% @user.memes.each do |meme| %>
+  <h2><%= link_to meme_path(meme) %></h2>
+  <% if meme.url.present? %>
+    <p><%= image_tag meme.url %></p>
+  <% end %>
+  <!--  <p><%=# meme.body.truncate(100) %></p> -->
+<% #end %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1><%= @user.name %></h1>
+4:    
+5:    <% @user.memes.each do |meme| %>
+6:      <h2><%= link_to meme_path(meme) %></h2>
+7:      <% if meme.url.present? %>
+8:        <p><%= image_tag meme.url %></p>
+9:      <% end %>
+10:      <!--  <p><%=# meme.body.truncate(100) %></p> -->
+11:    <% #end %>
+  
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/8" for ::1 at 2020-11-09 00:46:52 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1125)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3381)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1><%= @user.name %></h1>
+
+<% @user.memes.each do |meme| %>
+  <h2><%= link_to meme_path(meme) %></h2>
+  <% if meme.url.present? %>
+    <p><%= image_tag meme.url %></p>
+  <% end %>
+    <p><%=# meme.body.truncate(100) %></p> -->
+<% end %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1><%= @user.name %></h1>
+4:    
+5:    <% @user.memes.each do |meme| %>
+6:      <h2><%= link_to meme_path(meme) %></h2>
+7:      <% if meme.url.present? %>
+8:        <p><%= image_tag meme.url %></p>
+9:      <% end %>
+10:        <p><%=# meme.body.truncate(100) %></p> -->
+11:    <% end %>
+  
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/show.html.erb:13: unterminated string meets end of file
+app/views/users/show.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/8" for ::1 at 2020-11-09 00:47:21 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.4ms | Allocations: 10535)
+
+
+Started GET "/users/8" for ::1 at 2020-11-09 00:48:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 10558)
+
+
+Started GET "/users/8" for ::1 at 2020-11-09 00:48:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 9219)
+
+
+Started GET "/users/8" for ::1 at 2020-11-09 00:48:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 8]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1001)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 9216)
+
+

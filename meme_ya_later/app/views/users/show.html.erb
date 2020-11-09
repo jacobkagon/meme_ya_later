@@ -2,10 +2,12 @@
 
 <h1><%= @user.name %></h1>
 
-<% @user.posts.each do |post| %>
-  <h2><%= link_to post.title, post %></h2>
-  <% if post.photo.present? %>
-    <p><%= image_tag post.photo.url(:thumb) %></p>
+<% @user.memes.each do |meme| %>
+  <h2><%= link_to meme_path(meme) %></h2>
+  <% if meme.url.present? %>
+    <p><%= image_tag meme.url %></p>
+  <% else %>
+  <%= meme.file %>
   <% end %>
-  <p><%= post.body.truncate(100) %></p>
+    <p><%# meme.body.truncate(100) %></p> -->
 <% end %>
