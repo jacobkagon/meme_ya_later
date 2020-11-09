@@ -11,12 +11,13 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @errors = @user.errors
   end
 
   def create
     @user = User.create(user_params)
     session[:user_id] = @user.id
-    redirect_to memes_path
+    redirect_to memes_path, notice: "Thank you for Joining Meme Ya Later, #{@user.name}!"
   end
 
   private
