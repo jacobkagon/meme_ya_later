@@ -17887,3 +17887,2710 @@ ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
   
 app/views/users/show.html.erb:2:in `method'
 app/views/users/show.html.erb:2
+Started GET "/users/13" for ::1 at 2020-11-10 11:01:23 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 5569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.3ms | Allocations: 14934)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:01:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 10549)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:02:02 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 10550)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:03:43 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 10561)
+
+
+Started GET "/categories" for ::1 at 2020-11-10 11:04:11 -0500
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 8472)
+
+
+Started GET "/categories" for ::1 at 2020-11-10 11:04:12 -0500
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7712)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:13 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 9576)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:04:23 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.5ms | Allocations: 9060)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:26 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms | Allocations: 8739)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:04:27 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.6ms | Allocations: 9046)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:04:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 9051)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:31 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 8730)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:04:33 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1929)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.4ms | Allocations: 9775)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:33 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1035)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.4ms | Allocations: 8738)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:04:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 29.1ms | ActiveRecord: 0.5ms | Allocations: 9062)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:42 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 8732)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:04:44 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1617)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms | Allocations: 9320)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:04:46 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 8732)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:26:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.6ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1233)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.8ms | Allocations: 4298)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: 'delete'%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: 'delete'%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:27:47 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 10092)
+
+
+Started GET "/logout" for ::1 at 2020-11-10 11:27:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout" for ::1 at 2020-11-10 11:28:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout" for ::1 at 2020-11-10 11:28:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:28:12 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1209)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 4262)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: "Delete"%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: "Delete"%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:28:27 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1209)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 4263)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: "delete"%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: "delete"%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes/rails/routes" for ::1 at 2020-11-10 11:29:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/memes/rails/routes"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:31:06 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 10101)
+
+
+Started GET "/logout" for ::1 at 2020-11-10 11:31:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/lmemes" for ::1 at 2020-11-10 11:31:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/lmemes"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:31:49 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1209)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 4247)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: DELETE%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: DELETE%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:32:49 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1209)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 4256)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href= "<%=logout_path, method: 'delete'%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href= "<%=logout_path, method: 'delete'%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:33:50 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1209)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 4256)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: 'delete'%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: 'delete'%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:35:21 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1209)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 4254)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=logout_path, method: :delete%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="<%=logout_path, method: :delete%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL, expecting '='
+Started GET "/memes" for ::1 at 2020-11-10 11:36:23 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 10088)
+
+
+Started GET "/categories" for ::1 at 2020-11-10 11:36:46 -0500
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 8439)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:36:48 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 8718)
+
+
+Started GET "/users/13" for ::1 at 2020-11-10 11:36:49 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 13]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.7ms | Allocations: 10006)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:36:49 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms | Allocations: 8719)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:36:50 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1937)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms | Allocations: 9762)
+
+
+Started GET "/categories" for ::1 at 2020-11-10 11:36:51 -0500
+Processing by CategoriesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering categories/index.html.erb within layouts/application
+  Rendered categories/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 7705)
+
+
+Started GET "/logout" for ::1 at 2020-11-10 11:36:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout" for ::1 at 2020-11-10 11:37:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout" for ::1 at 2020-11-10 11:37:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:37:22 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms | Allocations: 10061)
+
+
+Started GET "/logout" for ::1 at 2020-11-10 11:37:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout" for ::1 at 2020-11-10 11:37:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:37:53 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1209)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 4256)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MemeYaLater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%if current_user%>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/memes">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/memes/new">Post a Meme</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/categories">School</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout<%=method: 'delete'%>">Logout</a>
+      </li>
+    </ul>
+     <%else%>
+       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+       <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+  <%end%>
+    
+  </div>
+</nav>
+
+    
+  
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>MemeYaLater</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      <%if current_user%>
+12:      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+13:      <a class="navbar-brand" href= "<%=user_path(current_user.id)%>"><%=current_user.name%></a>
+14:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+15:        <span class="navbar-toggler-icon"></span>
+16:      </button>
+17:    
+18:      <div class="collapse navbar-collapse" id="navbarColor01">
+19:        <ul class="navbar-nav mr-auto">
+20:          <li class="nav-item active">
+21:            <a class="nav-link" href="/memes">Home
+22:              <span class="sr-only">(current)</span>
+23:            </a>
+24:          </li>
+25:          <li class="nav-item">
+26:            <a class="nav-link" href="/memes/new">Post a Meme</a>
+27:          </li>
+28:          <li class="nav-item">
+29:            <a class="nav-link" href="#"></a>
+30:          </li>
+31:          
+32:          <li class="nav-item dropdown">
+33:            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/categories" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+34:            <div class="dropdown-menu">
+35:              <a class="dropdown-item" href="/categories">School</a>
+36:              <a class="dropdown-item" href="#">Another action</a>
+37:              <a class="dropdown-item" href="#">Something else here</a>
+38:              <div class="dropdown-divider"></div>
+39:              <a class="dropdown-item" href="#">Separated link</a>
+40:            </div>
+41:          </li>
+42:          <li class="nav-item">
+43:            <a class="nav-link" href="/logout<%=method: 'delete'%>">Logout</a>
+44:          </li>
+45:        </ul>
+46:         <%else%>
+47:           <a class = "navbar-brand" href="<%=login_path%>">Login</a>
+48:           <a class = "navbar-brand"><%=link_to "Sign Up", new_user_path%></a>
+49:      <%end%>
+50:        
+51:      </div>
+52:    </nav>
+53:    
+54:        
+55:      
+56:        <%= yield %>
+57:      </body>
+58:    </html>
+  
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:43: syntax error, unexpected tLABEL
+Started GET "/memes" for ::1 at 2020-11-10 11:39:29 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 10756)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:40:24 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.3ms | Allocations: 10180)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:31 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1035)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 8792)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:33 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 8788)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:33 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.5ms | Allocations: 8785)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:33 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 8784)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:34 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 8789)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:34 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 8786)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:34 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 8790)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:35 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 8779)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:35 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 8789)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:35 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms | Allocations: 8790)
+
+
+Started GET "/memes?method=delete" for ::1 at 2020-11-10 11:40:47 -0500
+Processing by MemesController#index as HTML
+  Parameters: {"method"=>"delete"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 10114)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-10 11:40:48 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vwg22QnEzg1CqBHitlYZPvTBpY7MEZAjDsK1/ccMDE6fTN+VsJqu3mNAYq5P8TFguIYgMHu0t5HL9Chv4iB8gw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 862)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:40:48 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 8758)
+
+
+Started GET "/login" for ::1 at 2020-11-10 11:40:52 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 537)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 8502)
+
+
+Started POST "/login" for ::1 at 2020-11-10 11:40:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"hejRdbboGBQYxEmIeakY58m25F30SKrZRCt1F7EoVHSlrDg5D7Z4xzksOsSADjC5hfFh40PtjWuBHeiFlAQkuQ==", "username"=>"Jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 8660)
+
+
+Started POST "/login" for ::1 at 2020-11-10 11:41:01 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8GEOk2YUqK9L3RnWGX6GOVlrASsN5ztyrsiGFOLoPj/QJeff30rIfGo1aprg2a5nFSyElbpCHMBr/huGx8RO8g==", "username"=>"jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 8649)
+
+
+Started GET "/users/new" for ::1 at 2020-11-10 11:41:05 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 10104)
+
+
+Started POST "/users" for ::1 at 2020-11-10 11:41:18 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Z18edKkrbbcZMesL+vu6DmC6GrF/qgxkQzFs872IJvVgVwjB/mJSUC9TeMuK4PaM+RIyQNpQR5U6n30HDmQ30g==", "user"=>{"name"=>"Jacob", "username"=>"jacob", "email_address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+[31mUnpermitted parameter: :email_address[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jacob"], ["username", "jacob"], ["created_at", "2020-11-10 16:41:18.562126"], ["updated_at", "2020-11-10 16:41:18.562126"], ["password_digest", "$2a$12$vps.yj6XdhKw0kVoSivScuZZSQFHW44wG8FNRZWjlVt4koptekE4q"]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 246ms (ActiveRecord: 1.9ms | Allocations: 3289)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:41:18 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 8761)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:41:25 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.4ms | Allocations: 9783)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:41:26 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1035)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.5ms | Allocations: 8743)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-10 11:41:30 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zKBB0AwfWMPlfByI4Nc2dc6X3QLCnAEA6kbiWVgZRG3s5KictUE4EMSUb8QZcB4rgtBYvHU5JrIvcH/LfTU0oA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 876)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:41:30 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 7951)
+
+
+Started GET "/login" for ::1 at 2020-11-10 11:41:39 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 8119)
+
+
+Started POST "/login" for ::1 at 2020-11-10 11:41:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ptO6YepkNi6+LtX78VdqkVyz86IZbwhyqEBlIQJZSSuGl1MtUzpW/Z/GprcI8ELPEPR2HK7KL8BtdvizJ3U55g==", "username"=>"jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 245ms (ActiveRecord: 0.4ms | Allocations: 1452)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:41:49 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 8748)
+
+
+Started GET "/users/14" for ::1 at 2020-11-10 11:41:52 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 14]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.6ms | Allocations: 9500)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:43:10 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 10133)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:43:23 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 10112)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-10 11:43:27 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rmvVth40cwHxS+fpLArW8Xw1uVxLl+3Q/k826vL2P/2OLzz6p2oT0tCjlKXVrf6vMHI84vwyymI7eat419pPMA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 859)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:43:27 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 8741)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-10 11:43:47 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rmvVth40cwHxS+fpLArW8Xw1uVxLl+3Q/k826vL2P/2OLzz6p2oT0tCjlKXVrf6vMHI84vwyymI7eat419pPMA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 992)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:43:47 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 9270)
+
+
+Started GET "/login" for ::1 at 2020-11-10 11:43:49 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 8493)
+
+
+Started POST "/login" for ::1 at 2020-11-10 11:43:54 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8RbuK0JDL4+/ZqYXy3uN5OB3Gop56KJuQNL0fbz1zaDRUgdn+x1PXJ6O1Vsy3KW6rDCfNM5NhdyF5Gnvmdm9bQ==", "username"=>"jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 242ms (ActiveRecord: 0.3ms | Allocations: 1446)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:43:54 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 9587)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:45:35 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 10126)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:46:06 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1035)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 8743)
+
+
+Started DELETE "/logout" for ::1 at 2020-11-10 11:46:10 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y7sU7sA8lTON478WOtHXckRlp8sIk8Uuh3IqkcxJzqHr//2ieWL14KwLzFrDdv8sCCIidb824pxCRLcD6WW+bA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 877)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:10 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 8748)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:46:18 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 969)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:18 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 7962)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:46:22 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 964)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:22 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 7956)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:46:27 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 972)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:27 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 7960)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:46:33 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 964)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:33 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 7955)
+
+
+Started GET "/users/14" for ::1 at 2020-11-10 11:46:40 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 978)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:40 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 7962)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:46:50 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 984)
+
+
+Started GET "/welcome" for ::1 at 2020-11-10 11:46:50 -0500
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 7954)
+
+
+Started GET "/login" for ::1 at 2020-11-10 11:46:55 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 8510)
+
+
+Started POST "/login" for ::1 at 2020-11-10 11:47:02 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"pYamVhaAsEKtQi0O0zeMgjPf83eOxC55tPwNypiqN16Fwk8ar97QkYyqXkIqkKTcf5h2yTlhCctxypBYvYZHkw==", "username"=>"jacob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "jacob"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+Redirected to http://localhost:3000/memes
+Completed 302 Found in 243ms (ActiveRecord: 0.4ms | Allocations: 1450)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:47:02 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 8755)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:47:05 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 8745)
+
+
+Started GET "/memes/new" for ::1 at 2020-11-10 11:47:07 -0500
+Processing by MemesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/memes/new.html.erb:13
+  Rendered memes/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.4ms | Allocations: 9780)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:47:08 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1035)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 8749)
+
+
+Started GET "/users/14" for ::1 at 2020-11-10 11:47:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."user_id" = ?[0m  [["user_id", 14]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 10032)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:47:17 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 8744)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:47:22 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 8733)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:51:10 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 10130)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:55:44 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1212)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 10121)
+
+
+Started GET "/%3Cimg" for ::1 at 2020-11-10 11:55:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Cimg"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:58:24 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1132)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 10032)
+
+
+Started GET "/%3Ca%20href=" for ::1 at 2020-11-10 11:58:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%3Ca%20href="):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/memes" for ::1 at 2020-11-10 11:59:24 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1131)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 10040)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 11:59:45 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1130)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.6ms | Allocations: 10040)
+
+
+Started GET "/memes/6" for ::1 at 2020-11-10 11:59:56 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 14.1ms | Allocations: 4165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.6ms | Allocations: 12559)
+
+
+Started GET "/memes/6" for ::1 at 2020-11-10 11:59:59 -0500
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  [1m[36mMeme Load (0.2ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:10:in `show'
+  Rendering memes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/memes/show.html.erb:1
+  Rendered memes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 9047)
+
+
+Started GET "/memes" for ::1 at 2020-11-10 12:00:53 -0500
+Processing by MemesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13:in `current_user'
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.1ms)[0m  [1m[34mSELECT "memes".* FROM "memes" ORDER BY "memes"."created_at" DESC[0m
+  ↳ app/views/memes/index.html.erb:3
+  Rendered memes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1130)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 10033)
+
+

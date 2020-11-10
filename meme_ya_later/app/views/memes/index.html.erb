@@ -1,9 +1,9 @@
 <h1> Memes </h1>
 
 <% @memes.order(created_at: :desc).each do |meme| %>
-    <div><%= link_to meme_path(meme) do %><br>
-        <%= image_tag meme.url%></div>
+    <div><%= link_to meme_path(meme) do %>
+      <img src ="<%= meme.url%>" class="rounded mx-auto d-block" alt="meme">
    <% end %>
-<%end%><br>
+<%end%><br></div>
 
 
