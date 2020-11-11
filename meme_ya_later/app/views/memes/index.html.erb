@@ -1,9 +1,16 @@
-<h1> Memes </h1>
+<h1> Home </h1>
+<div>
+<%=render 'meme_categories'%>
+</div>
 
 <% @memes.order(created_at: :desc).each do |meme| %>
-    <div><%= link_to meme_path(meme) do %>
-      <img src ="<%= meme.url%>" class="rounded mx-auto d-block" alt="meme">
+    <%= link_to meme_path(meme) do %>
+           <div class="p-1">
+            <img src="<%= meme.url%>" alt="" class="rounded mx-auto d-block" style="width:50%">
+           </div>
+   
    <% end %>
-<%end%><br></div>
+<%end%>
+   
 
 

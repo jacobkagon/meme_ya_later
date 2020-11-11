@@ -1,2 +1,7 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+
+<h1><%=@category.name%></h1>
+<%@category.memes.each do |meme|%> 
+<img src="<%=meme.url%>">
+<%end%>
+</div>
+

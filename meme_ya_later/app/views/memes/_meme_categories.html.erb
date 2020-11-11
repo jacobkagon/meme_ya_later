@@ -1,0 +1,6 @@
+ 
+<%Category.all.each do |category|%>
+   <ul>
+   <p> <%=link_to category.name, category_path(category.id)%></p>
+   </ul>
+  <%end%>
