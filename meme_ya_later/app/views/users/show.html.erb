@@ -3,7 +3,8 @@
 <h1><%= @user.name %></h1>
 <%= button_to 'Post Meme', new_meme_path, method: :get %>
 
-  <%= link_to 'send meme', 'new_user_message_path(' %>
+  <%= link_to 'send meme', 'new_user_message_path(' %><br>
+  <%=link_to "Update Account Information", edit_user_path%>
 
 
 <% @user.memes.each do |meme| %>
