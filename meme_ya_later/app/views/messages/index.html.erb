@@ -1,2 +1,4 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<h1>My Messages</h1>
+<% @messages.each do |message| %>
+    <%= image_tag message.body %>
+<% end %>

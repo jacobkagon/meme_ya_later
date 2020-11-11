@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
-<%# <%= link_to "Send Message", user_messages_path(@user.id), method %> %>
 
 <h1><%= @user.name %></h1>
 <%= button_to 'Post Meme', new_meme_path, method: :get %>
+
+  <%= link_to 'send meme', 'new_user_message_path(' %>
+
 
 <% @user.memes.each do |meme| %>
   <h2><%= link_to meme_path(meme) do %></h2>
@@ -13,5 +15,8 @@
   <% end %>
 <% end %>
 <%end%>
+
+
+
 
 
