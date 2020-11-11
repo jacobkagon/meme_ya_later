@@ -1,21 +1,23 @@
 <div class="container">
-  <nav id="sidebar">
-    <div class="sidebar-header">
+  <div class="position-sticky">
+   <nav id="sidebar" style="height: 50px">
+     <div class="sidebar-header">
        <div style="color: #0d6efd">
-       <h2>Categories</h2>
-       </div>
-    </div>
+       <h2>Categories:</h2>
+      </div>
+     </div>
        <%Category.all.each do |category|%>
-       <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto">
        <h3>
-       
-         <div style="color: #fff;">
-   <a class="nav-link" <%=link_to category.name, category_path(category.id)%> </a>
-         </div>
-      
-       </h3>
-
+         <div class ="navbar">
+           <div style="color: #fff;">
+              <a class="nav-link" <%=link_to category.name, category_path(category.id)%></a>
+           </div>
+        </div>
+      </h3>
      </ul>
-  <%end%>
-  </nav>
+     <%end%>
+   </nav>
+  </div>
 </div>
+
