@@ -1,6 +1,21 @@
- 
-<%Category.all.each do |category|%>
-   <ul>
-   <p> <%=link_to category.name, category_path(category.id)%></p>
-   </ul>
+<div class="container">
+  <nav id="sidebar">
+    <div class="sidebar-header">
+       <div style="color: #0d6efd">
+       <h2>Categories</h2>
+       </div>
+    </div>
+       <%Category.all.each do |category|%>
+       <ul class="navbar-nav mr-auto">
+       <h3>
+       
+         <div style="color: #fff;">
+   <a class="nav-link" <%=link_to category.name, category_path(category.id)%> </a>
+         </div>
+      
+       </h3>
+
+     </ul>
   <%end%>
+  </nav>
+</div>
