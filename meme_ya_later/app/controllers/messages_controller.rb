@@ -16,8 +16,8 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     @message.sender_id = current_user.id  
     @message.save
-    redirect_to message_path(@message)
-    flash.now[:notice] = 'Meme Sent!'
+    redirect_to messages_path
+    
   end
 
   def destroy
