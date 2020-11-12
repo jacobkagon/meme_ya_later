@@ -1,16 +1,32 @@
+<div class="container">
+ 
 <h1> Upload a New Meme</h1>
-<%= form_for @meme do |f| %>
+ </div>
+ <%= form_for @meme do |f| %>
     <% if @meme.errors.any? %>
-        <% @meme.errors.full_messages.each do |message| %>
-            <%= message %><br>
+    <div id="error_explanation">
+      <h2><%= pluralize(@meme.errors.count, "error") %> prohibited this meme from being saved:</h2>
 
-        <% end %>
-    <% end %>
-    <%= f.label :url%><br>
-    <%= f.text_field :url %><br>
-    <%= f.label :file %><br>
-    <%= f.file_field :file %><br>
-    <%= f.label :category_id %><br>
-    <%= f.collection_select(:category_id, Category.all, :id, :name) %><br>
-    <%= f.submit "Post Meme" %>
+      <ul>
+      <% @meme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+   <div class = "form-group">    
+    <%= f.label :url, class:'col-md4 control-label'%><br>
+       <div class="col-md-8">
+    <%= f.text_field :url, class: "form-control" %><br>
+       </div>
+    </div>
+  <div class="form-group">
+    <%=f.label :select_category, class:'col-md4 control-label'%><br>
+    <div class= "col-md-8">
+    <%= f.collection_select(:category_id, Category.all, :id, :name, class: "dropdown") %><br><br>
+    </div>
+ </div>
+    <%= f.submit "Post Meme", class: "btn btn-default btn-primary"%>
 <%end%>
+</div>
