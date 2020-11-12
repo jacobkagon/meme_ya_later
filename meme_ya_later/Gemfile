@@ -54,7 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #make the app look good
-gem 'bootstrap', '~> 5.0.0.alpha1'
+gem 'bootstrap', '~> 5.0.0.alpha2'
 #gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'devise'

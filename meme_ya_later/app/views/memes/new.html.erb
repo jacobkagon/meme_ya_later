@@ -1,8 +1,9 @@
 <h1> Upload a New Meme</h1>
 <%= form_for @meme do |f| %>
     <% if @meme.errors.any? %>
-        <% @meme.errors.full_messages.each do |error| %>
-            <%= error %><br>
+        <% @meme.errors.full_messages.each do |message| %>
+            <%= message %><br>
+
         <% end %>
     <% end %>
     <%= f.label :url%><br>

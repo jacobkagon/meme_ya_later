@@ -1,5 +1,12 @@
 class User < ApplicationRecord
-    validates :name, :username, presence: true 
+    validates :name, :username, :password, presence: true
+    EMAIL_FORMAT = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    validates :email_address, presence: true, format: { with: EMAIL_FORMAT }, 
+    uniqueness: true
+
+    
+    before_save { self.email = email_address.downcase }
+    
     
     
     has_many :sent_messages, class_name: "Message", foreign_key: :sender_id 

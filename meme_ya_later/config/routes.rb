@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   resources :memes
-  resources :users, only: [:index, :show, :new, :create]
+  resources :users, only: [:index, :show, :new, :edit, :create]
   
   
   resources :messages
