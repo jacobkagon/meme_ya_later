@@ -2,3 +2,4 @@
 <% @messages.each do |message| %>
     <%= image_tag message.body %>
 <% end %>
+<%= link_to 'send meme', new_message_path %>

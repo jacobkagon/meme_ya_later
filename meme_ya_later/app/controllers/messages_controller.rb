@@ -1,11 +1,11 @@
 class MessagesController < ApplicationController
-  before_action :set_recipient, only: [:new, :create]
   def index
-    @messages = current_user.received_messages 
+    @messages = current_user.sent_messages 
   end
 
   def show
-    @message = current_user.received_messages.find(params[:id])
+    @message = current_user.sent_messages.find(params[:id])
+    # @sent_message = current_user.sent_messages.find(params[:id])
   end
 
   def new
@@ -13,9 +13,10 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = current_user.sent_messages.new(message_params)
-    @message.receiver_id = @receiver.id 
+    @message = Message.new(message_params)
+    @message.sender_id = current_user.id  
     @message.save
+    redirect_to message_path(@message)
   end
 
   def destroy
@@ -25,10 +26,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:body, :receiver_id, :sender_id)
+    params.require(:message).permit(:body, :receiver_id)
   end
-  
-  def set_receiver
-    @receiver = User.find(params[:username])
-  end
+
 end

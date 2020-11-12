@@ -1,2 +1,4 @@
-<h1>Messages#show</h1>
-<p>Find me in app/views/messages/show.html.erb</p>
+<h1>Message</h1>
+From: <%= @message.sender.name %>
+To: <%= @message.receiver.name %>
+<%= image_tag @message.body %>
