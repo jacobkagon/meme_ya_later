@@ -7,8 +7,7 @@ class User < ApplicationRecord
     
     before_save { self.email = email_address.downcase }
     
-    
-    
+   
     has_many :sent_messages, class_name: "Message", foreign_key: :sender_id 
     has_many :receivers, through: :sent_messages, source: :receiver
     has_many :received_messages, class_name: "Message", foreign_key: :receiver_id 
