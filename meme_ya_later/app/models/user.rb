@@ -1,11 +1,13 @@
 class User < ApplicationRecord
-    validates :name, :username, :password, presence: true
+    validates :name, presence: true
     EMAIL_FORMAT = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     validates :email_address, presence: true, format: { with: EMAIL_FORMAT }, 
     uniqueness: true
+    validates :username, uniqueness: true
+    validates :password, presence:true, length: {minimum: 8} 
 
     
-    before_save { self.email = email_address.downcase }
+    before_save { self.email_address = email_address.downcase }
     
     
     
