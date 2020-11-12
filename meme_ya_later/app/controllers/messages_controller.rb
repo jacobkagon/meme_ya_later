@@ -1,10 +1,10 @@
 class MessagesController < ApplicationController
   def index
-    @messages = current_user.sent_messages 
+    @messages = current_user.received_messages 
   end
 
   def show
-    @message = current_user.sent_messages.find(params[:id])
+    @message = current_user.received_messages.find(params[:id])
     # @sent_message = current_user.sent_messages.find(params[:id])
   end
 
@@ -17,6 +17,7 @@ class MessagesController < ApplicationController
     @message.sender_id = current_user.id  
     @message.save
     redirect_to message_path(@message)
+    flash.now[:notice] = 'Meme Sent!'
   end
 
   def destroy
