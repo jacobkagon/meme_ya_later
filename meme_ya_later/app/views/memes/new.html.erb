@@ -24,7 +24,7 @@
   <div class="form-group">
     <%=f.label :select_category, class:'col-md4 control-label'%><br>
     <div class= "col-md-8">
-    <%= f.collection_select(:category_id, Category.all, :id, :name, class: "dropdown") %><br><br>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, class: "dropdown" ) %><br><br>
     </div>
  </div>
     <%= f.submit "Post Meme", class: "btn btn-default btn-primary"%>
