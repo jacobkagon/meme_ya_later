@@ -1,4 +1,6 @@
 Posted by: <div><strong><%= link_to @meme.user.username, user_path(@meme.user.id) %></strong></div>
 on <br><%= @meme.created_at %><br>
-<%= image_tag @meme.url %>
+<div class="p-3">>
+ <img src="<%= @meme.url%>" alt="" class="rounded mx-auto d-block" style="width:50%">
+</div>
 

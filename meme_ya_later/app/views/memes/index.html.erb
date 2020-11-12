@@ -1,16 +1,25 @@
-<h1> Home </h1>
-<div>
-<%=render 'meme_categories'%>
-</div>
 
-<% @memes.order(created_at: :desc).each do |meme| %>
+<head>
+<div class="container text-center">
+  <div style="color: #0d6efd">
+
+<h1> Home </h1>
+  </div>
+</div>
+</head>
+  <body>
+  <%=render partial: "meme_categories"%>
+   <% @memes.order(created_at: :desc).each do |meme| %>
     <%= link_to meme_path(meme) do %>
-           <div class="p-1">
-            <img src="<%= meme.url%>" alt="" class="rounded mx-auto d-block" style="width:50%">
-           </div>
-   
-   <% end %>
-<%end%>
-   
+           <div class="p-3">
+           <div class="sticky-top">
+            <img src="<%= meme.url%>" alt="" class="rounded mx-auto d-block" style="width:40%">
+          </div>
+          </div>
+          
+     <% end %>
+    <%end%>
+    
+  </body>
 
 

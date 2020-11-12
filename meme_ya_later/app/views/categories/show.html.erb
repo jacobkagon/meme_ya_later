@@ -1,7 +1,13 @@
 
-<h1><%=@category.name%></h1>
-<%@category.memes.each do |meme|%> 
-<img src="<%=meme.url%>">
+<div class="container text-center">
+  <div style="color: #0d6efd">
+<h1> <%=@category.name%> </h1>
+  </div>
+</div>
+<%@category.memes.order(created_at: :desc).each do |meme|%> 
+<div class="p-3">
+ <img src="<%= meme.url%>" alt="" class="rounded mx-auto d-block" style="width:50%">
+</div>
 <%end%>
 </div>
 

@@ -36,9 +36,6 @@
         <a class="nav-link" <%=link_to "Logout", logout_path, method: 'delete'%> </a>
       </li>
     </ul>
-     <%else%>
-       <a class = "navbar-brand" href="<%=login_path%>">Login</a>
-       <a class = "navbar-brand" href="<%= new_user_path%>">Sign Up</a>
   <%end%>
     
   </div>
