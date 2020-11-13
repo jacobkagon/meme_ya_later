@@ -22,6 +22,7 @@ class MessagesController < ApplicationController
 
   def destroy
     @message = current_user.received_messages.destroy(params[:id])
+    redirect_to user_path
   end
 
   private

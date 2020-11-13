@@ -1,11 +1,20 @@
-<h1>My Messages</h1>
-<% @messages.each do |message| %>
-    <%= image_tag message.body %><br>
-    <p>
+<div class="container text-center">
+  <div style="color: #0d6efd">
+
+<h1> My Messages </h1>
+  </div>
+
+
+<%= button_to 'send meme', new_message_path, method: 'get' %><br>
+</div>
+<% @messages.order(created_at: :desc).each do |message| %>
+  <img src="<%=message.body %>"class="rounded mx-auto d-block" style="width:40%">
+   <div class="container text-center">
     <%= button_to 'Delete Message', message,
                  method: :delete,
                  data: { confirm: 'Are you sure?' } %>
-    </p> 
+  </div>
+
 <% end %>
-<%= button_to 'send meme', new_message_path, method: 'get' %><br>
+
 

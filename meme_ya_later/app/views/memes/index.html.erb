@@ -11,7 +11,7 @@
   <%=render partial: "meme_categories"%>
    <% @memes.order(created_at: :desc).each do |meme| %>
     <%= link_to meme_path(meme) do %>
-           <div class="mt-4">
+           <div class= "mt-4">
             <img src="<%= meme.url%>" alt="" class="rounded mx-auto d-block" style="width:40%">
           </div>
      <% end %>

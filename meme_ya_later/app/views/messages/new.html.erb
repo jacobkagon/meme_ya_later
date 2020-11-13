@@ -1,11 +1,18 @@
-<h1>New Message To </h1>
+<div class="container">
+<div class="jumbotron">
+<h1>New Message</h1>
+</div>
 
-<%= form_for @message do |f| %>
-    <%= f.collection_select :receiver_id, User.all, :id, :name %><br>
+<%= form_for @message, :html => {:class => "form-horizontal center"} do |f| %>
+    
+    <div class = "form-group">
+    <strong><%=f.label :Friend%></strong><br>
+    <%= f.collection_select :receiver_id, User.all, :id, :name, class: "dropdown" %><br>
+    </div>
+    <strong><%= f.label :body, "Enter Meme URL" %></strong><br>
+    <%= f.text_area :body, class: "form-control"%><br>
 
-    <strong><%= f.label :body, "Enter your message below" %></strong><br>
-    <%= f.text_area :body %><br>
-
-    <%= f.submit "Send" %>
+    <%= f.submit "Send", class: "btn btn-default btn-primary" %>
 <% end %>
+</div>
 
