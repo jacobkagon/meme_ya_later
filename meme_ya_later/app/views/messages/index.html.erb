@@ -13,8 +13,12 @@
     <%= button_to 'Delete Message', message,
                  method: :delete,
                  data: { confirm: 'Are you sure?' } %>
+  From: <%=link_to message.sender.name, user_path(message.sender.id)%>
   </div>
-
+  
+   
 <% end %>
+
+
 
 
